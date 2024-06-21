@@ -166,20 +166,23 @@ aside article img.icon{
 	max-width: 150px;
 }
 
-aside article img.maxaside{
+img.maxaside{
 	border-radius: 30px;
 	max-width: 19vw;
 }
 
-aside img.games{
+img.linkimg{
 	border-radius: 0px;
-	max-width: calc(19vw - 40px);
 }
 
-aside img.games:hover{
+img.linkimg:hover{
 	position: relative;
-	bottom: 10px;
-	right: 30px;
+	bottom: 15px;
+}
+
+article ul li img.linkimg{
+	border-radius: 30px;
+	width: 20vw;
 }
 
 aside .formContainer{
@@ -192,6 +195,12 @@ article figcaption{
 
 section article ul{
 	padding: 18px;
+}
+
+ul.next li{
+	display: inline-block;
+	margin-right: 10px;
+	list-style-type: circle;
 }
 
 #slideshow1 {
@@ -231,9 +240,9 @@ section article ul{
 }
 
 .slide-wrapper {
-	max-width: calc(4 * 18vw);
-	min-width: calc(4 * 198px);
-	animation: slide 18s ease infinite;
+    width: calc(4 * 18vw);
+    min-width: calc(4 * 198px);
+    animation: slide 18s ease infinite;
 }
   
 .slide {
@@ -244,7 +253,7 @@ section article ul{
 	min-width: 198px;
 	min-height: 132px;
 	
-	background-size: contain, cover;
+	background-size: cover;
 	background-repeat: no-repeat;
 }
   
@@ -425,7 +434,6 @@ input{
 	padding: 4px;
     box-sizing: border-box;
 	border-radius: 10px;
-	
 }
 
 textarea{

@@ -40,8 +40,13 @@ aside{
 	max-width: 100vw;
 }
 
-aside img.maxaside{
+img.maxaside{
 	max-width: 100vw;
+}
+
+img.linkimg{
+	width: 82vw;
+	object-fit: contain;
 }
 
 aside article{

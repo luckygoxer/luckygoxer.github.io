@@ -3,6 +3,8 @@
 <article class="TheaterandMusicPage">
     
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas' Portfolio Website</title>
     <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -52,7 +54,6 @@
     <article>
         <section>
             <figure>
-        <div id="slideshow">
         <div id="slideshow1">
             <div class="slide-wrapper">
               <div class="slide"></div>
@@ -61,7 +62,6 @@
               <div class="slide"></div>
             </div>
         </div>
-    </div>
     </figure>
     
         <h1>Vettig DE musical</h1>
@@ -82,7 +82,6 @@
     
     <section class="space">
         <figure>
-        <div id="slideshow">
         <div id="slideshow2">
             <div class="slide-wrapper">
               <div class="slide"></div>
@@ -91,7 +90,6 @@
               <div class="slide"></div>
             </div>
         </div>
-    </div>
     </figure>
     
         <p>After a challenge from Leo, Ken decides to race against him. 
@@ -188,6 +186,28 @@
 </footer>
 
 </section>
+
+<script>
+    window.onload = function() {
+        var images = [
+            '../images/Theater/vettig1.jpg',
+            '../images/Theater/vettig2.jpg',
+            '../images/Theater/vettig3.jpg',
+            '../images/Theater/vettig4.jpg'
+        ];
+    
+        images.forEach(function(image) {
+            var img = new Image();
+            img.src = image;
+            img.onload = function() {
+                console.log(image + ' loaded');
+            };
+            img.onerror = function() {
+                console.error(image + ' failed to load');
+            };
+        });
+    };
+</script>
 
 </body>
 </article>
