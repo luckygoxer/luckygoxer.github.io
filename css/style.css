@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@import url("style-small.css") screen and (min-width: 300px) and (max-width: 840px);
+@import url("style-small.css") screen and (max-width: 840px);
 
 @import url("style-large.css") screen and (min-width: 840px);
 
@@ -177,14 +177,9 @@ aside img.games{
 }
 
 aside img.games:hover{
-	box-shadow: none;
-}
-
-aside article img:hover {
 	position: relative;
 	bottom: 10px;
 	right: 30px;
-	box-shadow: 30px 10px grey;
 }
 
 aside .formContainer{
@@ -344,6 +339,16 @@ aside form h1{
     box-sizing: border-box;
 	max-width: 300px;
 	display: inline-block;	
+}
+
+.formContainer input,
+.formContainer textarea {
+    font-family: 'Poppins', sans-serif;
+}
+
+.formContainer input::placeholder,
+.formContainer textarea::placeholder {
+    font-family: 'Poppins', sans-serif;
 }
 
 footer nav{
