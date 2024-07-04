@@ -166,9 +166,17 @@ aside article img.icon{
 	max-width: 150px;
 }
 
-img.maxaside{
-	border-radius: 30px;
-	max-width: 19vw;
+img.maxaside,
+iframe.maxaside {
+    border-radius: 30px;
+    max-width: 19vw;
+    height: auto;
+    display: block;
+}
+
+iframe.maxaside {
+    width: calc(19vw);
+    height: calc(19vw * 9 / 16); 
 }
 
 img.linkimg{

@@ -56,3 +56,16 @@ aside article{
 .formContainer{
 	margin: 18px;
 }
+
+aside section.formContainer{
+	max-width: 100vw;
+}
+ 
+input[type="text"],
+textarea[type="text"],
+button[type="text"] {
+	width: calc(100%); 
+	margin-bottom: 10px; 
+}
+  
+  
