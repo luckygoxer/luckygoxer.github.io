@@ -68,4 +68,6 @@ button[type="text"] {
 	margin-bottom: 10px; 
 }
   
-  
+.invisible {
+    display: none;
+}

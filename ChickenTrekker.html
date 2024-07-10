@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<article class="ChickenTrekker">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+    <title>Lucas' Portfolio Website</title>
+</head>
+
+<body>
+
+    <header>
+        <figure><img src="images/Grease-Me.jpg" alt="Grease"></figure>
+
+        <nav>
+        <ul>
+            <li><a href="index.html">About me</a></li>
+            <li class="active"><a href="GamesPage.html">Games</a></li>
+            <li><a href="DesignPage.html">Design</a></li>
+            <li><a href="TheaterandMusicPage.html">Theater and Music</a></li>
+            <li><a href="EducationandCourses.html">Education and Courses</a></li>
+            <li><a href="Volunteerwork.html">Volunteer work</a></li>
+            <li><a href="Experience.html">Experience</a></li>
+            <li><a href="Skills.html">Skills</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="GamesPage.html">About games</a></li>
+                <li><a href="ForestFoxDX.html">ForestFoxDX</a></li>
+                <li><a href="FishyBusiness.html">Fishy Business</a></li>
+                <li><a href="TangledMemories.html">Tangled Memories</a></li>
+                <li><a href="SuperPlatformerDX.html">SuperPlatformerDX</a></li>
+                <li class="active"><a href="ChickenTrekker.html">Chicken Trekker</a></li>
+                <li><a href="LevelDesign.html">Level Design</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    </header>
+
+<section class="chonk">
+<main>
+    <aside>
+        <article class="border">
+            <h2>Go to:</h2>
+            <ul>
+              <li><a href="#"><b>About</b></a></li>
+              <li class="invisible"><a href="#"><b>Game</b></a></li>
+              <li><a href="#"><b>Screenshots</b></a></li>
+              <li><a href="#"><b>Process</b></a></li>
+              <li><a href="#"><b>Link</b></a></li>
+            </ul>
+          </article>
+    </aside>
+
+<section class="articles">
+    <article>
+        <h1>Chicken Trekker</h1>
+        <time>July 5, 2024</time>
+        <h2>About:</h2>
+        <p>In the last term of my first year at Creative Media & Game Technologies, I created a game called Chicken Trekker for the Unity Game Scripting module. 
+        This is a physics-based game where I mainly focused on learning more C#.
+    <br>
+        In this game, you seem to have lost your chickens! 
+        Go on an epic quest to track them down! At one point you even have to evade the police!
+        </p>
+    <br>
+        <h2>Creator:</h2>
+        <img class="mylogo" src="images/Inspired/luckygoxer red.png" alt="luckygoxer red">
+    <br>
+        <h2>Engine:</h2>
+        <p>Made in Unity</p>
+    <br>
+        <h2>Platforms:</h2>
+        <p>Windows, HTML5</p>
+    <br>
+        <div class="invisible">
+        <h2>Game:</h2>
+
+            <canvas id="unity-canvas" width: calc(63vw); height: calc(63vw * 9 / 16); tabindex="-1" style="width: 1280px; height: 720px; background: #1F1F20"></canvas>
+            <script src="Build/Chicken Trekker.loader.js"></script>
+            <script>
+            if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+                // Mobile device style: fill the whole browser client area with the game canvas:
+                var meta = document.createElement('meta');
+                meta.name = 'viewport';
+                meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+                document.getElementsByTagName('head')[0].appendChild(meta);
+
+                var canvas = document.querySelector("#unity-canvas");
+                canvas.style.width = "calc(63vw)";
+                canvas.style.height = "calc(63vw * 9 / 16)";
+                canvas.style.position = "fixed";
+
+                document.body.style.textAlign = "left";
+            }
+
+            createUnityInstance(document.querySelector("#unity-canvas"), {
+                dataUrl: "Build/Chicken Trekker.data.unityweb",
+                frameworkUrl: "Build/Chicken Trekker.framework.js.unityweb",
+                codeUrl: "Build/Chicken Trekker.wasm.unityweb",
+                streamingAssetsUrl: "StreamingAssets",
+                companyName: "luckygoxer",
+                productName: "Chicken Trekker",
+                productVersion: "1.0",
+                // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+                // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+            });
+            </script>
+    <br>
+    <br>
+        </div>
+        <h2>Screenshots:</h2>
+        <img class="maxaside" src="images/Games/ChickenTrekker1.png" alt="ChickenTrekker1">
+        <img class="maxaside" src="images/Games/ChickenTrekker2.png" alt="ChickenTrekker2">
+        <img class="maxaside" src="images/Games/ChickenTrekker3.png" alt="ChickenTrekker3">
+    <br>
+        <h2>Link:</h2>
+        <p>Download it for free on <a href="https://luckygoxer.itch.io/chicken-trekker" target="_blank">my Itch page!</a></p>
+    </article>
+</section>
+</main>
+
+<footer>
+    <section class="width">
+        <section class="formContainer">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <h1>Contact me!</h1>
+                <input type="hidden" name="access_key" value="5f4a45a6-2d74-4695-99b8-126965590da4">
+                <input type="text" name="name" placeholder="Your name" />
+                <input type="text" name="email" placeholder="Your email" />
+                <input type="text" name="phone" placeholder="Your phone number (optional)" />
+                <textarea name="message" placeholder="Your message"></textarea>
+                <button name="submit" type="submit">Send Message</button>
+            </form>
+        </section>
+    
+        <nav class="footerNavigation">
+            <h2>Social Media</h2>
+            <ul>
+                <li><a href="https://luckygoxer.itch.io/" target="_blank"><img src="images/Empty.png" alt="itch" /></a></li>
+                <li><a href="https://www.linkedin.com/in/lucas-van-den-heuvel-a93b10137/" target="_blank"><img src="images/Empty.png" alt="linkedin" /></a></li>
+                <li><a href="https://discordapp.com/users/luckygoxer#5798/" target="_blank"><img src="images/Empty.png" alt="discord" /></a></li>
+                <li><a href="https://www.bible.com/users/heuvellucas" target="_blank"><img src="images/Empty.png" alt="bible" /></a></li>
+            </ul>
+        </nav>
+    </section>
+</footer>
+
+</body>
+</article>
+</html>
