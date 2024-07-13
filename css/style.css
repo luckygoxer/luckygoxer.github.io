@@ -17,6 +17,11 @@ colors{
 	background-color: #1C110A;
 }
 
+html{
+	scroll-behavior: smooth;
+	scroll-padding-top: 189px;
+}
+
 a:link {
 	color: orange;
 	text-decoration: none;
@@ -67,8 +72,9 @@ header{
 	position: sticky;
 	top: 0;
 	background-color: black;
-	z-index: 1;
+	z-index: 100;
 	flex-basis:100%;
+	height: fit-content;
 }
 
 header img {
@@ -137,6 +143,13 @@ aside{
 	padding: 20px;
 	flex-grow:1;
 	flex-basis: 19vw;
+	position: sticky;
+	top: 106px; 
+	z-index: 1;
+}
+
+aside.bigheader{
+	top: 168px; 
 }
 
 aside article{
@@ -175,7 +188,8 @@ img.maxaside{
     display: block;
 	padding-top: 5px;
 	margin-bottom: 18px;
-	
+	z-index: 2;
+	position: relative;
 }
 
 iframe{
@@ -196,6 +210,15 @@ img.linkimg:hover{
 article ul li img.linkimg{
 	border-radius: 30px;
 	width: 20vw;
+}
+
+article ul li img.logo{
+	/* border-radius: 30px; */
+	width: 13vw;
+}
+
+article ul li img.logo:nth-of-type(odd){
+	margin-right: 20px;
 }
 
 aside .formContainer{
@@ -468,7 +491,7 @@ button{
 	margin-bottom: 4px;
 }
 
-#unity-container { position: absolute }
+#unity-container { position: relative; z-index: 2; }
 #unity-container.unity-mobile { position: fixed; width: 100vw; height: 100% }
 #unity-canvas { background: #1F1F20 }
 .unity-mobile #unity-canvas { width: 100%; height: 100% }
@@ -486,4 +509,10 @@ button{
 canvas {
 	max-width: 1000px;
 	max-height: calc(1000px * 9 / 16);
+	position: relative;
+	z-index: 2;
+}
+
+.invisible {
+    display: none;
 }

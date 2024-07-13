@@ -67,7 +67,3 @@ button[type="text"] {
 	width: calc(100%); 
 	margin-bottom: 10px; 
 }
-  
-.invisible {
-    display: none;
-}

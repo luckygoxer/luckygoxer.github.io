@@ -19,9 +19,9 @@
         <nav>
         <ul>
             <li><a href="index.html">About me</a></li>
-            <li class="active"><a href="GamesPage.html">Games</a></li>
-            <li><a href="DesignPage.html">Design</a></li>
-            <li><a href="TheaterandMusicPage.html">Theater and Music</a></li>
+            <li class="active"><a href="Games.html">Games</a></li>
+            <li><a href="Design.html">Design</a></li>
+            <li><a href="TheaterandMusic.html">Theater and Music</a></li>
             <li><a href="EducationandCourses.html">Education and Courses</a></li>
             <li><a href="Volunteerwork.html">Volunteer work</a></li>
             <li><a href="Experience.html">Experience</a></li>
@@ -32,7 +32,7 @@
     <section>
         <nav>
             <ul>
-                <li><a href="GamesPage.html">About games</a></li>
+                <li><a href="Games.html">About games</a></li>
                 <li><a href="ForestFoxDX.html">ForestFoxDX</a></li>
                 <li><a href="FishyBusiness.html">Fishy Business</a></li>
                 <li><a href="TangledMemories.html">Tangled Memories</a></li>
@@ -47,12 +47,12 @@
 
 <section class="chonk">
 <main>
-    <aside>
+    <aside class="bigheader">
         <article class="border">
             <h2>Go to:</h2>
             <ul>
               <li><a href="#"><b>About</b></a></li>
-              <li class="invisible"><a href="#"><b>Game</b></a></li>
+              <li class="invisibleformobile"><a href="#"><b>Game</b></a></li>
               <li><a href="#"><b>Screenshots</b></a></li>
               <li><a href="#"><b>Process</b></a></li>
               <li><a href="#"><b>Link</b></a></li>
@@ -81,7 +81,10 @@
         <h2>Platforms:</h2>
         <p>Windows, HTML5</p>
     <br>
-        <div class="invisible">
+        <script src="/Detect.js/detect.min.js"></script>
+        <script src="/Detect.js/main.js"></script>
+
+        <div class="invisibleformobile">
         <h2>Game:</h2>
 
             <canvas id="unity-canvas" width: calc(63vw); height: calc(63vw * 9 / 16); tabindex="-1" style="width: 1280px; height: 720px; background: #1F1F20"></canvas>
@@ -122,8 +125,12 @@
         <img class="maxaside" src="images/Games/ChickenTrekker2.png" alt="ChickenTrekker2">
         <img class="maxaside" src="images/Games/ChickenTrekker3.png" alt="ChickenTrekker3">
     <br>
+        <h2>Process:</h2>
+        <p>Coming soon!</p>
+    <br>
         <h2>Link:</h2>
-        <p>Download it for free on <a href="https://luckygoxer.itch.io/chicken-trekker" target="_blank">my Itch page!</a></p>
+        <p class="invisibleformobile">Download it for free on <a href="https://luckygoxer.itch.io/superplatformerdx" target="_blank">my Itch page!</a></p>
+        <p class="invisibleforpc">Look at this page on your laptop/pc to play or download the Windows version for free on <a href="https://luckygoxer.itch.io/superplatformerdx" target="_blank">my Itch page!</a></p>
     </article>
 </section>
 </main>

@@ -17,9 +17,9 @@
         <nav>
         <ul>
             <li><a href="index.html">About me</a></li>
-            <li class="active"><a href="GamesPage.html">Games</a></li>
-            <li><a href="DesignPage.html">Design</a></li>
-            <li><a href="TheaterandMusicPage.html">Theater and Music</a></li>
+            <li class="active"><a href="Games.html">Games</a></li>
+            <li><a href="Design.html">Design</a></li>
+            <li><a href="TheaterandMusic.html">Theater and Music</a></li>
             <li><a href="EducationandCourses.html">Education and Courses</a></li>
             <li><a href="Volunteerwork.html">Volunteer work</a></li>
             <li><a href="Experience.html">Experience</a></li>
@@ -30,7 +30,7 @@
     <section>
         <nav>
             <ul>
-                <li><a href="GamesPage.html">About games</a></li>
+                <li><a href="Games.html">About games</a></li>
                 <li><a href="ForestFoxDX.html">ForestFoxDX</a></li>
                 <li class="active"><a href="FishyBusiness.html">Fishy Business</a></li>
                 <li><a href="TangledMemories.html">Tangled Memories</a></li>
@@ -45,12 +45,12 @@
 
 <section class="chonk">
 <main>
-    <aside>
+  <aside class="bigheader">
       <article class="border">
         <h2>Go to:</h2>
           <ul>
             <li><a href="#"><b>About</b></a></li>
-            <li class="invisible"><a href="#"><b>Game</b></a></li>
+            <li class="invisibleformobile"><a href="#"><b>Game</b></a></li>
             <li><a href="#"><b>Screenshots</b></a></li>
             <li><a href="#"><b>Process</b></a></li>
             <li><a href="#"><b>Link</b></a></li>
@@ -81,7 +81,10 @@
         <h2>Platforms:</h2>
         <p>Windows, HTML5</p>
     <br>
-      <div class="invisible">
+        <script src="/Detect.js/detect.min.js"></script>
+        <script src="/Detect.js/main.js"></script>
+
+      <div class="invisibleformobile">
         <h2>Game:</h2>
 
         <div id="unity-container" class="unity-desktop">
@@ -195,36 +198,114 @@
           </script>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
       </div>
         <h2>Screenshots:</h2>
         <img class="maxaside" src="images/Games/FishyBusiness1.png" alt="FishyBusiness1">
         <img class="maxaside" src="images/Games/FishyBusiness2.png" alt="FishyBusiness2">
         <img class="maxaside" src="images/Games/FishyBusiness3.png" alt="FishyBusiness3">
+      <br>
+        <h2>Process:</h2>
+        <p>
+          <figure><img src="images/Games/Process/Fishy Business/pic1.jpg" alt="ProcessPictures"></figure>
+          My first idea for this game was a platformer where you play as a crab. 
+          Because I had created a platformer already; ForestFoxDX in Unreal Engine 5, I decided to make a different kind of game.
+          <br>
+          <br>
+          <figure><img src="images/Games/Process/Fishy Business/pic2.jpg" alt="ProcessPictures"></figure>
+          My next idea was an arcade type of game, where you are meant to improve your high score. 
+          I added fishing rods and nets, to show overfishing and the bottles represent plastic pollution.
+          <br>
+          <br>
+          <figure><img src="images/Games/Process/Fishy Business/pic3.jpg" alt="ProcessPictures"></figure>
+          I concluded that a level system might be better, with a bigger second level and thus area to defend in-game.
+          <br>
+          <br>
+          <figure><img src="images/Games/Process/Fishy Business/pic4.jpg" alt="ProcessPictures"></figure>
+          I wanted a visual indication for the player why it is important to kick the bottles back, so I made some coral reefs with a health bar.
+          <br>
+          <br>
+          I started by doing the Unity tutorials; the Essentials, the Creative Core as well as the Junior Programmer course. 
+          I continued learning by watching many, many tutorials on using Unity. 
+          Then I made a level layout and a movable character with updating animations. 
+          I made a collecting system with a current score, a high score, and a timer. 
+          At this point, the base for my platformer (back then) was ready. 
+          <br>
+          <br>
+          Now that I was somewhat comfortable with how Unity and C# work, I decided to focus on the theme of my game, so I made a fish character with different physics than the base character. 
+          It was able to swim instead of walk and jump and wasn’t bound to gravity. 
+          I made custom sprites for my character, the rods, nets, plastic bottles, background, coral reefs, ground, and more.
+          <br>
+          <br>
+          Then I made the corresponding GameObjects; thus the rods, nets, and bottles, and gave them their behavior; the bottles sink to the bottom, the rods and nets go into the water until a certain height is reached, and stay a couple of seconds, and leave the water again. 
+          All have different spawn rates and speeds. I gave my fish character an attack move, so he could 'kick' the bottles out of the water.
+          <br>
+          <br>
+          I learned to use Lerp to be able to get the Nets and Rods in and out of the water smoothly and I created Prefabs from most GameObjects to be able to easily use them in other levels as well.
+          <br>
+          <br>
+          I added controller inputs to attract a wider range of players, created a menu and a welcome, win, and lose screen, and finally a little story, so the player knows what the goal is. 
+          Afterward, I added custom music and sound effects, a second level, and finally an arcade game mode, where the only goal is beating your high score.
+          <br>
+          <br>
+          <figure><img src="images/Games/Process/Fishy Business/pic5.jpg" alt="ProcessPictures"></figure>
+          This is a screenshot from level 1 in the final build. 
+          I realized that it would be better if the Main Mode levels didn’t have a high score on display because the player isn’t able to kick more bottles than the goal of 15. 
+          I deleted it here, so only the arcade/unlimited mode levels have one.
+          <br>
+          <br>
+          <figure><img src="images/Games/Process/Fishy Business/pic6.jpg" alt="ProcessPictures"></figure>
+          This is a screenshot from the second level of the arcade game mode in the final build.
+          <br>
+          <br>
+          <figure><img src="images/Games/Process/Fishy Business/pic7.jpg" alt="ProcessPictures"></figure>
+          I found that the height where gameObjects spawn varies per gameObject and level. 
+          That’s why I changed the Instantiate(y), to a public float dubbed spawnHeight, so I can change it inside Unity itself. 
+          This made adjustments and testing a lot simpler.
+          <br>
+          <br>
+          <figure><img src="images/Games/Process/Fishy Business/pic8.jpg" alt="ProcessPictures"></figure>
+          I used color-coding for the buttons; On the Welcome scene you can see a green button for start, because that is what the player often wants, on the Win scene is a red button for quit, because it is a bright color that generally means ‘danger’ (this is because you do not accidentally want to quit the entire game), and lastly I made the unlimited mode buttons orange and red retrospectively, to nudge the player to try the main campaign first.
+          <br>
+          <br>
+          <figure><img src="images/Games/Process/Fishy Business/pic9.jpg" alt="ProcessPictures"></figure>
+          I decided to create a timer with three decimals, rather than without any, so there could be somewhat of a speedrunning experience, or the player could also try to beat their best time. 
+          I consider it to be a good addition to the game, adding to the fluency and experience of the game.
+          <br>
+          <br>
+          After creating the basics of the game, I started letting others playtest my game, gathering feedback, and improving my game.
+          <br>
+          <br>
+          The first playtester let me know that the random.range of the x-position for the spawn point of the bottles is too much to the right. 
+          I fixed it by moving the float leftestPoint and the float rightestPoint both to the left.
+          <img src="images/Games/Process/Fishy Business/pic10.jpg" width="600px" alt="ProcessPictures">
+          <br>
+          <br>
+          The second playtester found the second level easier than the first level. 
+          Presumably, because the spawnRates of the bottles, nets, and fishing rots stay the same, which means that the same amount of entities spawn over a bigger x-range, which makes it feel empty. 
+          I fixed this by reducing the spawnRates by a second and half a second.
+                <figure><img src="images/Games/Process/Fishy Business/pic11.jpg" width="280px" alt="ProcessPictures">
+                <figure><img src="images/Games/Process/Fishy Business/pic12.jpg" width="280px" alt="ProcessPictures">
+                <figcaption>Level 2</figcaption></figure>
+                <figcaption>Level 1 </figcaption></figure>
+          
+          <br>
+          <br>
+          <figure><img src="images/Games/Process/Fishy Business/pic13.jpg" width="281px"alt="ProcessPictures"></figure>
+          <figure><img src="images/Games/Process/Fishy Business/pic14.jpg" width="281px"alt="ProcessPictures"></figure>
+          A first-year student noticed that the KeyBinding for the kick move was not clear. 
+          I fixed this by adding the KeyBinding in the selection scene.
+          <br>
+          <br>
+          I started making this game by knowing nothing about Unity. 
+          Now I have made a game that I want to improve by processing feedback, adding more levels with new enemies, a boss fight, and a level selection screen that is unlockable after beating the game.
+          <br>
+          <br>
+          During this project, I developed my skills in <b>Unity</b>, <b>C#</b> and <b>fast iteration</b>.
+        </p>
     <br>
         <h2>Link:</h2>
-        <p>Download it for free on <a href="https://luckygoxer.itch.io/fishybusiness" target="_blank">my Itch page!</a></p>
+        <p class="invisibleformobile">Download it for free on <a href="https://luckygoxer.itch.io/superplatformerdx" target="_blank">my Itch page!</a></p>
+        <p class="invisibleforpc">Look at this page on your laptop/pc to play or download the Windows version for free on <a href="https://luckygoxer.itch.io/superplatformerdx" target="_blank">my Itch page!</a></p>
     </article>
 </section>
 </main>
