@@ -143,9 +143,6 @@ aside{
 	padding: 20px;
 	flex-grow:1;
 	flex-basis: 19vw;
-	position: sticky;
-	top: 106px; 
-	z-index: 1;
 }
 
 aside.bigheader{
@@ -196,6 +193,8 @@ iframe{
     max-width: 1000px;
 	width: calc(63vw);
 	height: calc(63vw * 9 / 16);
+	position: relative;
+	z-index: 2;
 }
 
 img.linkimg{

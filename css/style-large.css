@@ -38,6 +38,9 @@ main{
 aside{
 	min-width: none;
 	max-width: 19vw;
+	position: sticky;
+	top: 106px; 
+	z-index: 1;
 }
 
 aside article{
@@ -65,4 +68,8 @@ footer nav{
 	margin: 60px 0 60px 0;
 	margin-left: 3vw;
 	transform: translateY(-50%);
+}
+
+#invisibleforbig{
+	display: none;
 }
