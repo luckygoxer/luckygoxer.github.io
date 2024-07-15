@@ -74,3 +74,18 @@ button[type="text"] {
 #invisibleforbig{
 	padding-right: 5px;
 }
+
+.navsmall{
+	display: block;
+}
+
+img.linkimg{
+	align-items: center;
+	max-width: calc(100vw - 100px);
+}
+
+img.smallsmall{
+	align-items: center;
+	max-width: calc(100vw - 100px);
+	height: 100%;
+}

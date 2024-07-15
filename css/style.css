@@ -206,6 +206,10 @@ img.linkimg:hover{
 	bottom: 15px;
 }
 
+article.middle{
+	text-align: center;
+}
+
 article ul li img.linkimg{
 	border-radius: 30px;
 	width: 20vw;
