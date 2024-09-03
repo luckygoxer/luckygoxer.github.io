@@ -140,7 +140,7 @@ main section article figure img{
 
 aside{
 	float: right;
-	padding: 20px;
+	padding-top: 20px;
 	flex-grow:1;
 	flex-basis: 19vw;
 }
@@ -173,6 +173,7 @@ aside article img{
 }
 
 aside article img.icon{
+	min-width: 100px;
 	max-width: 150px;
 }
 
@@ -212,7 +213,6 @@ article.middle{
 
 article ul li img.linkimg{
 	border-radius: 30px;
-	width: 20vw;
 }
 
 article ul li img.logo{
@@ -234,6 +234,10 @@ article figcaption{
 
 section article ul{
 	padding: 18px;
+}
+
+.next {
+	display: flex;
 }
 
 ul.next li{
@@ -381,6 +385,11 @@ aside form h1{
 	color: black;
 	font-size: large;
 	margin-bottom: 4px;
+}
+
+aside h2.indent{
+	font-size: medium;
+	margin-left: 20px;
 }
 
 .formContainer{
