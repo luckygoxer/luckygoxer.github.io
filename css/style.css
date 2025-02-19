@@ -190,6 +190,19 @@ img.maxaside{
 	position: relative;
 }
 
+video.maxaside{
+    border-radius: 30px;
+    max-width: 1000px;
+	width: calc(63vw);
+	height: calc(63vw * 9 / 16);
+    height: auto;
+    display: block;
+	padding-top: 5px;
+	margin-bottom: 18px;
+	z-index: 2;
+	position: relative;
+}
+
 iframe{
     max-width: 1000px;
 	width: calc(63vw);
