@@ -45,8 +45,8 @@
                 <li><a href="TangledMemories.html">Tangled Memories</a></li>
                 <li><a href="SuperPlatformerDX.html">SuperPlatformerDX</a></li>
                 <li><a href="ChickenTrekker.html">Chicken Trekker</a></li>
-                <li class="active"><a href="ProceduralArt.html">Procedural Art</a></li>
                 <li><a href="LevelDesign.html">Level Design</a></li>
+                <li class="active"><a href="ProceduralArt.html">Procedural Art</a></li>
             </ul>
         </nav>
     </section>
@@ -62,7 +62,13 @@
                 <ul>
                 <li><a href="#"><b>About</b></a></li>
                 <li><a href="#Videos"><b>Videos</b></a></li>
-                <li><a href="#Process"><b>Process</b></a></li>
+                <li><a href="#RendersAndUnity"><b>Renders and Unity</b></a></li>
+                <li><a href="#Research"><b>Research</b></a></li>
+                <li><a href="#MeshesAndStructures"><b>Meshes and structures</b></a></li>
+                <li><a href="#Materials"><b>Materials</b></a></li>
+                <li><a href="#Customizability"><b>Customizability</b></a></li>
+                <li><a href="#LookAndFeel"><b>Look and feel</b></a></li>
+                <li><a href="#MyProudestAccomplishment"><b>My proudest accomplishment</b></a></li>
                 </ul>
             </article>
         </section>
@@ -94,10 +100,197 @@
             <source src="images/Games/ProceduralArt/Long House.mp4" type="video/mp4">
         </video>
     <br>
-        <h2 id="Process">Process:</h2>
-        <p>Coming soon!</p>
-        <script src="/Detect.js/detect.min.js"></script>
-        <script src="/Detect.js/main.js"></script>
+        <h2 id="RendersAndUnity">Renders and Unity:</h2>
+    <p>
+        <figure><img src="images/Games/ProceduralArt/Picture1.png" alt="Picture1"></figure>
+        Here you can get a quick impression of my town. 
+        The main mechanics are procedural landmass generation and random building generation.
+    <br>
+    <br>
+        <h2 id="Research"> Research:</h2>
+        Derived from the sample image, the Morthal theme is based on a village in the North West and consists of various kinds of meshes and textures. 
+        The climate is very cold and snowy, so the Morthal theme uses houses, roads, and potentially pine trees, rocks, and water as basic building blocks. 
+        The landscape has grass, hay or straw, sand, water, and mountains. 
+        It is quite swampy with water next to the village and the roads seem to be made with sand.
+    <br>
+    <br>
+        <figure><img src="images/Games/ProceduralArt/Picture2.png" alt="Picture2"></figure>
+        The houses have thatched roofs that are steeply stopped. Logs and planks are used for the buildings.
+    <br>
+    <br>
+        For the houses, I need log and straw textures. 
+        The materials can look a little worn due to weather conditions and the age of the buildings. For the roads, I need snow and sand textures. 
+        For the pine trees, I need log and leaf textures. Lastly, for the rocks, I need stone textures and for the water, I need a water texture. 
+        For the time of day, I am thinking about creating a dawn-of-day setting. 
+        I want some lighting from the sun with a clear sky and potentially fog.
+    <br>
+    <br>
+        The trees and rocks can be reusable 3D models with random rotation and size. 
+        The trees could have additional decks of leaves. 
+        For the houses, I need a base block with a door, a middle block, and a straw roof that is steep at the top and less steep at the bottom. 
+    <br>
+    <br>
+        I would like to generate the houses randomly with at least the base block and roof and potentially 1 or 2 middle blocks randomly. 
+        Outside the village, a random number of trees and rocks should also be randomly generated with a random rotation and size. 
+        The objects should not overlap or else they should be removed.
+    <br>
+    <br>
+        I have researched new procedural techniques like generating a mesh of the map using code (procedural landmass generation), (Perlin) Noise, HDRP Shader Graphs, creating substances, creating fog, clouds, and lighting. 
+        You can read more about these techniques in part 4 about my own contributions.
+    <br>
+    <br>
+        <h2 id="MeshesAndStructures">Meshes and structures</h2>
+        <b>Map generation</b>
+        <br>
+        <figure><img src="images/Games/ProceduralArt/Picture3.png" alt="Picture3"></figure>
+        I imported HDRP and the Substance 3D for Unity plugin in advance and started by working on the landscape. 
+        I created a gradient so a higher point will have a brighter color and a lower point will have a darker color. 
+        <figure><img src="images/Games/ProceduralArt/Picture4.png" alt="Picture4"></figure>
+    <br>
+    <br>
+        I added a mesh generator by using a mesh filter and mesh renderer. 
+        In the MeshGenerator code, I used some code to create a triangle. 
+        I made it a square with another triangle and deleted them afterward to write a vertices system. 
+        This system generates triangles between vertices when runtime is started. 
+        <figure><img src="images/Games/ProceduralArt/Picture5.png" alt="Picture5"></figure>
+    <br>
+    <br>
+        I also added some PerlinNoise in the code and created the floor/ground for my village. 
+        I created an HDRP Shader Graph and put it on my material. 
+        I edited the gradient with blue, green, grey, and white for water, grass, rock, and snow respectively. 
+        Because this was a very unoptimized version and I didn’t understand it fully, I decided it best to rework most of it later on.
+    <br>
+    <br>
+        I created a better version of the noise by making a Noise Map with adjustable width, height, and noise scale in the Unity editor. 
+        I added a seed, octaves, persistence, lacunarity, and an offset. 
+        Using code, I created a UV from the floor to enable tiling and tested it using a PNG that was displayed on the floor correctly. 
+        I called my Noise Map into the MeshGenerator and now you can generate a Noise Map and adjust it to your liking by changing the height and width, noise scale, octaves, persistence, lacunarity, seed, and offset. 
+        The mesh now generates its landscape based on the created Noise Map. 
+        In runtime, all values can still be changed and customized after generation and the map and the mesh will update live. 
+        Using this custom Unity editor tooling, fast scene creation has been made possible. 
+    <br>
+    <br>
+        I made the colors a bit less saturated and lighter and darker where necessary. 
+        I multiplied some values to accentuate the environment and created a Mesh Height Curve, that ensures that the terrain has a base height. 
+        This means that the water does not go down, but is always flat, for example. 
+    <br>
+    <br>
+        Some optimizations have been done for real-time efficiency, like an exposed Level Of Detail parameter slider, that works both in the editor and in run-time. 
+        This slider makes the Mesh more or less detailed, by using more or less triangles, taking up more or less space. 
+        This will be shown later in the presentation.
+    <br>
+    <br>
+        <b>Building generation</b>
+        <br>
+        <figure><img src="images/Games/ProceduralArt/Picture6.png" alt="Picture6"></figure>
+        First using the GridCity project given in the bootcamps, I started working on random building generation. 
+        I experimented with the GridCity spawn script and decided I wanted random generation and not in columns and rows. 
+        <figure><img src="images/Games/ProceduralArt/Picture7.png" alt="Picture7"></figure>
+        I watched some tutorials and created a GridCityRandom script which looks at the X, Y, and Z values I put in between which the buildings may spawn. 
+    <br>
+    <br>
+        I created the MapGeneratorEditor script which makes the Generate and Clear buttons visible in the Unity editor. 
+        I set the values and generated the houses, but the houses did not appear yet. 
+        I found out I need to have a mesh attached to the map as well as the buildings so they do not fall through the map when a ray is cast. 
+    <br>
+    <br>
+        <figure><img src="images/Games/ProceduralArt/Picture8.png" alt="Picture8"></figure>
+        After changing some code, the buildings are now being generated in either the editor or in runtime! 
+        I edited the SimpleBuilding script provided in the bootcamps to add space between the buildings, so they don’t overlap and spawn into each other. 
+        Now a consistent scale for the size and placement of buildings has been established.  
+    <br>
+    <br>
+        <b>3D Modeling</b>
+        <br>
+        <figure><img src="images/Games/ProceduralArt/Picture10.png" alt="Picture10"></figure>
+        I created the houses consisting of a Base Layer, potentially a Middle Layer, and a Roof made in Maya, so a range of shapes is created procedurally from a smaller range of these Building Blocks. 
+        I made every building turn a random amount. 
+        <figure><img src="images/Games/ProceduralArt/Picture11.png" alt="Picture11"></figure>
+    <br>
+    <br>
+        Of course, the idea with the houses with different levels could also be used to create pine trees with different heights, decks of leaves, and rotations, similar to the buildings. 
+        The random locations for spawning the houses could also be used for trees, rocks, etcetera.
+    <br>
+    <br>
+        <b>UV’ing</b>
+        <br>
+        <figure><img src="images/Games/ProceduralArt/Picture13.png" alt="Picture13"></figure>
+        I have UV’d the Building Block meshes for the houses by creating a camera-based UV. 
+        I auto seamed it and adjusted the UVs to fit on the UV 1 by 1. 
+        The UV’ing enables tiling.
+    <br>
+    <br>
+        <h2 id="Materials">Materials</h2>
+        I started creating texture materials using Substance 3D Designer. 
+        <figure><img src="images/Games/ProceduralArt/Picture14.png" alt="Picture14"></figure>
+        There are exposed parameters in Unity so the materials can be customized without having to use Substance 3D Designer again. 
+        I have created wooden logs, planks, and hay roof textures and applied them to my houses. 
+        After adjusting the tiling in Unity, all textures seem to have a proper scale for their respective surfaces. 
+        <figure><img src="images/Games/ProceduralArt/Picture16.png" alt="Picture16"></figure>
+    <br>
+    <br>
+        Now my resulting structures and meshes match my visual research and the style of Morthal.
+        <img src="images/Games/ProceduralArt/Picture15.png" alt="Picture15" width="300">
+    <br>
+    <br>
+        <h2 id="Customizability">Customizability</h2>
+        This custom Unity editor tooling can be used for fast landscape creation. 
+        You can change the height and width, noise scale, octaves, persistence, lacunarity, seed, and offset. 
+        The mesh will update live. 
+        The Level Of Detail parameter slider makes the Mesh more or less detailed, by using more or less triangles, taking up more or less space. 
+        <video width="600px" autoplay muted playsinline loop>
+            <source src="images/Games/ProceduralArt/Map Generator.mp4" type="video/mp4">
+        </video>
+    <br>
+    <br>
+        Here the building parameters can be controlled before generation. 
+        The buildings can still be regenerated after generation, both in the editor and runtime, allowing for recognizable variety in the buildings even after generation. 
+        <video width="600px" autoplay muted playsinline loop>
+            <source src="images/Games/ProceduralArt/Generate Buildings.mp4" type="video/mp4">
+        </video>
+    <br>
+    <br>
+        Here you can see the buildings being customized after generation. 
+        Here the buildings can still be edited, and customized after generation, both in the editor and runtime. 
+        The houses consist of a Base Layer, potentially a Middle Layer, and a Roof, so a range of shapes is created procedurally from a smaller range of these Building Blocks. 
+        Using exposed parameters in Unity, more Middle Layers can be added to the buildings and more Building Block prefabs for each layer to randomly appear can be added too.  
+        <video width="600px" autoplay muted playsinline loop>
+            <source src="images/Games/ProceduralArt/Long House.mp4" type="video/mp4">
+        </video>
+    <br>
+    <br>
+        Lastly, the materials can be customized by the exposed parameters inside Unity.
+        <br>
+        <img src="images/Games/ProceduralArt/Picture18.png" alt="Picture18" width="195">
+        <img src="images/Games/ProceduralArt/Picture19.png" alt="Picture19" width="195">
+        <img src="images/Games/ProceduralArt/Picture20.png" alt="Picture20" width="195">
+    <br>
+    <br>
+        <h2 id="LookAndFeel">Look and feel</h2>
+        <figure><img src="images/Games/ProceduralArt/Picture17.png" alt="Picture17"></figure>
+        I added a directional light to enhance the lighting and changed the colors to make them fit with the Morthal aesthetic. 
+        For additional VFX, I created a volumetric fog effect for my town over the snow and adjusted the lighting settings, to make it look darker and a bit more like the dawn of day. 
+        <figure><img src="images/Games/ProceduralArt/Picture1.png" alt="Picture1"></figure>
+        I added clouds in the sky as well. 
+    <br>
+    <br>
+        <b>Conclusion</b>
+        <br>
+        Combining all of these techniques, I think I created a simplistic town that matches the chosen theme.
+    <br>
+    <br>
+        <h2 id="MyProudestAccomplishment">My proudest accomplishment</h2>
+        <figure><img src="images/Games/ProceduralArt/Picture3.png" alt="Picture3"></figure>
+        My proudest accomplishment is the procedural landscape generation. 
+        In the MeshGenerator code, I started with only some code to create a triangle and it turned into a complex vertices system which generates triangles between vertices when runtime is started and a complicated Noise Map with adjustable width, height, noise scale, seed, octaves, persistence, lacunarity, an offset and even adjustable Level Of Detail parameters in the Unity editor, which can still be changed and customized after generation in runtime and update live.
+        <figure><img src="images/Games/ProceduralArt/Picture5.png" alt="Picture5"></figure>
+        <figure><img src="images/Games/ProceduralArt/Picture4.png" alt="Picture4"></figure>
+        <video width="600px" autoplay muted playsinline loop>
+            <source src="images/Games/ProceduralArt/Map Generator.mp4" type="video/mp4">
+        </video>
+    </p>
+    <script src="/Detect.js/detect.min.js"></script>
+    <script src="/Detect.js/main.js"></script>
     </article>
 </section>
 </main>
