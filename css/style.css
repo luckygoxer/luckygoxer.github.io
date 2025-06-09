@@ -516,6 +516,10 @@ button{
 	margin-bottom: 4px;
 }
 
+button:hover{
+	background-color: rgba(50, 205, 50, 0.8);
+}
+
 #unity-container { position: relative; z-index: 2; }
 #unity-container.unity-mobile { position: fixed; width: 100vw; height: 100% }
 #unity-canvas { background: #1F1F20 }
