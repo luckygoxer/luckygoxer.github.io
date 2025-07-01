@@ -421,6 +421,16 @@ aside h2.indent{
     font-family: 'Poppins', sans-serif;
 }
 
+.formContact{
+	max-width: 600px;
+}
+
+.formContact input[type=text],
+.formContact textarea[type=text],
+.formContact button[type=text]{
+	width: 568px;
+}
+
 footer nav{
 	background-color: coral;
 	padding: 18px 20px 18px 20px;
