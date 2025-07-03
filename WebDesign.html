@@ -99,46 +99,46 @@
                 <br>
                 <br>
                     <h2 id="SQLstyle">Creating a style:</h2>
-                    I started by designing a landing page using my knowledge from the Web and Advanced Web modules. This is a Home page where I have built the other pages off of. I created a simple placeholder name and logo.
                     <figure><img src="images/Web Design/SQL/1.png" alt="1"></figure> 
+                    I started by designing a landing page using my knowledge from the Web and Advanced Web modules. This is a Home page where I have built the other pages off of. I created a simple placeholder name and logo.
                 <br>
                 <br>
-                    I chose a color palette to create a fitting aesthetic. This is a soft color palette creating a bit of personality, but not taking away from the clarity.
                     <figure><img src="images/Web Design/Code2.jpg" alt="ProcessPictures"></figure>
+                    I chose a color palette to create a fitting aesthetic. This is a soft color palette creating a bit of personality, but not taking away from the clarity.
                 <br>
                 <br>
                     <h2 id="SQLsidejob">The side job idea:</h2>
+                    <figure><img src="images/Web Design/SQL/3.png" alt="3"></figure> 
                     I first tried to create a database for searching for and offering side jobs. After learning a little bit about PHP and how it collaborates with HTML, I created some pages and forms to make this idea work. 
                     On the Home page, I created a form called ‘Need something?’ where the user can input what is needed and what he/she offers themselves. 
-                    <figure><img src="images/Web Design/SQL/3.png" alt="3"></figure> 
                 <br>
                 <br>
+                    <figure><img src="images/Web Design/SQL/4.png" alt="4"></figure> 
                     The form should then redirect to the Step 2 page with a form called ‘Great! Just one more step...’ where the user can put in their email address, city, and province. 
                     Lastly, that form should redirect to the Results page, where the results are shown and the user can update the results by filling in new information in the ‘Update results’ form, where the user can put in the new city and province, and even choose to ignore the location.
-                    <figure><img src="images/Web Design/SQL/4.png" alt="4"></figure> 
                 <br>
                 <br>
                     <h2 id="SQLfirstphp">The first steps in PHP:</h2>
+                    <figure><img src="images/Web Design/SQL/5.png" alt="5"></figure> 
                     I created a PHP file for the header, so it's easier to implement and read every file, because there is way less HTML in every file; just <?php include "header.php"; ?>. 
                     Using PHP code, the header also now highlights the correct PHP page by setting it to active. 
-                    <figure><img src="images/Web Design/SQL/5.png" alt="5"></figure> 
                 <br>
                 <br>
-                    Later, I created another PHP file for the footer, similar to the header, making it easier to change the footer on all pages, instead of having to change it on every one of them. In the footer, I created a background image and some social media icons to redirect to the corresponding social media.
                     <figure><img src="images/Web Design/SQL/6.png" alt="6"></figure> 
                     <figure><img src="images/Web Design/SQL/7.png" alt="7"></figure> 
+                    Later, I created another PHP file for the footer, similar to the header, making it easier to change the footer on all pages, instead of having to change it on every one of them. In the footer, I created a background image and some social media icons to redirect to the corresponding social media.
                 <br>
                 <br>
                     Unfortunately, due to my limited knowledge of PHP and outdated tutorials, I could not complete the side job idea. When the user is logged in, you can still see the pages I made for this idea, called Home, Step 2, and Results. Instead of this idea, I created a login system using PHP. 
                 <br>
                 <br>
                     <h2 id="SQLdatabase">The PHP login system and database:</h2>
-                    I started by installing XAMPP and running Apache and MySQL.
                     <figure><img src="images/Web Design/SQL/8.png" alt="8"></figure> 
+                    I started by installing XAMPP and running Apache and MySQL.
                 <br>
                 <br>
-                    In phpMyAdmin, I created a new database called login_sample_db with a table called users. I added columns called id, user_id, user_name, password, and date. I set the id and user_id to integer, the user_name and password to variable, and the date to timestamp. The id is for the database, and the user_id is for development usage.  After adding indexes for user_id, user_name, and date, the database is now set up and ready to use.
                     <figure><img src="images/Web Design/SQL/9.png" alt="9"></figure> 
+                    In phpMyAdmin, I created a new database called login_sample_db with a table called users. I added columns called id, user_id, user_name, password, and date. I set the id and user_id to integer, the user_name and password to variable, and the date to timestamp. The id is for the database, and the user_id is for development usage.  After adding indexes for user_id, user_name, and date, the database is now set up and ready to use.
                 <br>
                 <br>
                     In the XAMPP folder, I created a folder called login: C:\xampp\htdocs\login and started working on the website in this folder. This way, XAMPP can easily find the necessary documents and localhost the website. 
@@ -146,40 +146,39 @@
                 <br>
                     <b>Logging in</b>
                     <br>
-                    I started on the code of the index.php (Home page). I learned some code to create Sessions to check if the user is logged in or out. When logged in, the user is met with a greeting by using: Hello <?php echo $user_data['user_name']; ?>! on the index.php (Home page).
-                    <figure><img src="images/Web Design/SQL/10.png" alt="10"></figure> 
                     <figure><img src="images/Web Design/SQL/11.png" alt="11"></figure> 
-                <br>
-                <br>
-                    I created a login.php (Login page). This page contains a form for logging in by adding a username and password and clicking the login button. I also added a signup button beneath the form to go to the signup page. In the login.php code, it checks if the entered information is the same as the information in the database. Then the user is logged in.
                     <figure><img src="images/Web Design/SQL/12.png" alt="12"></figure> 
+                    I started on the code of the index.php (Home page). I learned some code to create Sessions to check if the user is logged in or out. When logged in, the user is met with a greeting by using: Hello <?php echo $user_data['user_name']; ?>! on the index.php (Home page).
+                <br>
+                <br>
                     <figure><img src="images/Web Design/SQL/13.png" alt="13"></figure> 
+                    I created a login.php (Login page). This page contains a form for logging in by adding a username and password and clicking the login button. I also added a signup button beneath the form to go to the signup page. In the login.php code, it checks if the entered information is the same as the information in the database. Then the user is logged in.
                 <br>
                 <br>
                     <b>Signing up</b>
                     <br>
-                    I created a signup.php (Signup page) similar to the Login page. This page contains a form for signing up by adding a username and password and clicking the sign-up button. I also added a signup button beneath the form to go to the signup page. In the signup.php code, it uploads the username and password to the database. Later, I added code so the password has to be put in twice, and only if they match, an account will be created.
                     <figure><img src="images/Web Design/SQL/14.png" alt="14"></figure> 
                     <figure><img src="images/Web Design/SQL/15.png" alt="15"></figure> 
+                    I created a signup.php (Signup page) similar to the Login page. This page contains a form for signing up by adding a username and password and clicking the sign-up button. I also added a signup button beneath the form to go to the signup page. In the signup.php code, it uploads the username and password to the database. Later, I added code so the password has to be put in twice, and only if they match, an account will be created.
                 <br>
                 <br>
-                    In a new connection.php script, I added functionality to connect to the database, so user information can be read and uploaded. This script should be included in every page.
                     <figure><img src="images/Web Design/SQL/16.png" alt="16"></figure> 
+                    In a new connection.php script, I added functionality to connect to the database, so user information can be read and uploaded. This script should be included in every page.
                 <br>
                 <br>
-                    In a new functions.php script, I added functionality to check if the user is logged in. If not, the index.php (Home page) shall redirect to the login.php (Login page). This script should be included in every page.
                     <figure><img src="images/Web Design/SQL/17.png" alt="17"></figure> 
+                    In a new functions.php script, I added functionality to check if the user is logged in. If not, the index.php (Home page) shall redirect to the login.php (Login page). This script should be included in every page.
                 <br>
                 <br>
                     <b>Logging out</b>
                     <br>
                     To complete the full functionality, I created a logout.php script. This script is accessed by clicking on the Log out button in the header visible on every page. This script simply unsets the user_id and redirects to the login.php (Login page). 
-                    <figure><img src="images/Web Design/SQL/18.png" alt="18"></figure> 
-                    <figure><img src="images/Web Design/SQL/19.png" alt="19"></figure> 
                 <br>
                 <br>
                     <b>Changing my account</b>
                     <br>
+                    <figure><img src="images/Web Design/SQL/18.png" alt="18"></figure> 
+                    <figure><img src="images/Web Design/SQL/19.png" alt="19"></figure> 
                     Lastly, I created a myaccount.php (My account page), where you can see your username, update your username, and update your password. The code for this page takes heavy inspiration from the signing up page. The current username is overwritten if the current username is correct and the new username is valid. The current password is overwritten if the current password is correct and the new password is put in twice and they match.
                 <br>
                 <br>
