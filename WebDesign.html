@@ -85,14 +85,16 @@
                 </section>
             </aside>
         
-        <section>
+        <section class="articles">
             <article>
                 <h1 id="MySQL">MySQL database using PHP</h1>
                 <time>April 20, 2025 - July 3, 2025</time>
                 <h2 id="#SQLvideo">Video:</h2>
-                <video class="maxaside" autoplay muted playsinline loop>
+                <video class="maxaside invisibleformobile" autoplay muted playsinline loop>
                     <source src="images/Web Design/SQL/Database video.webm" type="video/webm">
                 </video>
+                <p class="invisibleforpc">Look at this page on your laptop/pc to watch the video!</p>
+                <br>
                 <p>
                     <h2 id="SQLprocess">Process:</h2>
                     First, I started by learning about frontend and backend web development. I already knew a bit about frontend web development through the Web and Advanced Web modules. For this website, I used HTML and CSS for the frontend. For this website, I used PHP, XAMPP, and phpMyAdmin for the backend. In XAMPP, Apache and MySQL need to be running for the website to function. These function as the localhost server, because Live Server cannot be used to run PHP code. phpMyAdmin functions as a database that stores information like id, user_id, user_name, password, and date. 
@@ -104,7 +106,8 @@
                 <br>
                 <br>
                     <figure><img src="images/Web Design/Code2.jpg" alt="ProcessPictures"></figure>
-                    I chose a color palette to create a fitting aesthetic. This is a soft color palette creating a bit of personality, but not taking away from the clarity.
+                    I chose a color palette to create a fitting aesthetic. 
+                    This is a soft color palette creating a bit of personality, but not taking away from the clarity.
                 <br>
                 <br>
                     <h2 id="SQLsidejob">The side job idea:</h2>
@@ -125,8 +128,9 @@
                 <br>
                 <br>
                     <figure><img src="images/Web Design/SQL/6.png" alt="6"></figure> 
+                    Later, I created another PHP file for the footer, similar to the header, making it easier to change the footer on all pages, instead of having to change it on every one of them. 
                     <figure><img src="images/Web Design/SQL/7.png" alt="7"></figure> 
-                    Later, I created another PHP file for the footer, similar to the header, making it easier to change the footer on all pages, instead of having to change it on every one of them. In the footer, I created a background image and some social media icons to redirect to the corresponding social media.
+                    In the footer, I created a background image and some social media icons to redirect to the corresponding social media.
                 <br>
                 <br>
                     Unfortunately, due to my limited knowledge of PHP and outdated tutorials, I could not complete the side job idea. When the user is logged in, you can still see the pages I made for this idea, called Home, Step 2, and Results. Instead of this idea, I created a login system using PHP. 
@@ -137,8 +141,12 @@
                     I started by installing XAMPP and running Apache and MySQL.
                 <br>
                 <br>
+                    In phpMyAdmin, I created a new database called login_sample_db with a table called users. 
+                    I added columns called id, user_id, user_name, password, and date. 
                     <figure><img src="images/Web Design/SQL/9.png" alt="9"></figure> 
-                    In phpMyAdmin, I created a new database called login_sample_db with a table called users. I added columns called id, user_id, user_name, password, and date. I set the id and user_id to integer, the user_name and password to variable, and the date to timestamp. The id is for the database, and the user_id is for development usage.  After adding indexes for user_id, user_name, and date, the database is now set up and ready to use.
+                    I set the id and user_id to integer, the user_name and password to variable, and the date to timestamp. 
+                    The id is for the database, and the user_id is for development usage.  
+                    After adding indexes for user_id, user_name, and date, the database is now set up and ready to use.
                 <br>
                 <br>
                     In the XAMPP folder, I created a folder called login: C:\xampp\htdocs\login and started working on the website in this folder. This way, XAMPP can easily find the necessary documents and localhost the website. 
@@ -147,27 +155,43 @@
                     <b>Logging in</b>
                     <br>
                     <figure><img src="images/Web Design/SQL/11.png" alt="11"></figure> 
+                    I started on the code of the index.php (Home page). 
+                    I learned some code to create Sessions to check if the user is logged in or out. 
+                    When logged in, the user is met with a greeting by using: Hello &lt;?php echo $user_data['user_name']; ?&gt;! on the index.php (Home page).
                     <figure><img src="images/Web Design/SQL/12.png" alt="12"></figure> 
-                    I started on the code of the index.php (Home page). I learned some code to create Sessions to check if the user is logged in or out. When logged in, the user is met with a greeting by using: Hello <?php echo $user_data['user_name']; ?>! on the index.php (Home page).
                 <br>
                 <br>
+                    I created a login.php (Login page). 
+                    This page contains a form for logging in by adding a username and password and clicking the login button. 
                     <figure><img src="images/Web Design/SQL/13.png" alt="13"></figure> 
-                    I created a login.php (Login page). This page contains a form for logging in by adding a username and password and clicking the login button. I also added a signup button beneath the form to go to the signup page. In the login.php code, it checks if the entered information is the same as the information in the database. Then the user is logged in.
+                    I also added a signup button beneath the form to go to the signup page. 
+                    In the login.php code, it checks if the entered information is the same as the information in the database. 
+                    Then the user is logged in.
                 <br>
                 <br>
+                <br><br><br><br><br>
                     <b>Signing up</b>
                     <br>
                     <figure><img src="images/Web Design/SQL/14.png" alt="14"></figure> 
+                    I created a signup.php (Signup page) similar to the Login page. 
+                    This page contains a form for signing up by adding a username and password and clicking the sign-up button. 
+                    I also added a signup button beneath the form to go to the signup page. 
                     <figure><img src="images/Web Design/SQL/15.png" alt="15"></figure> 
-                    I created a signup.php (Signup page) similar to the Login page. This page contains a form for signing up by adding a username and password and clicking the sign-up button. I also added a signup button beneath the form to go to the signup page. In the signup.php code, it uploads the username and password to the database. Later, I added code so the password has to be put in twice, and only if they match, an account will be created.
+                    In the signup.php code, it uploads the username and password to the database. 
+                    Later, I added code so the password has to be put in twice, and only if they match, an account will be created.
                 <br>
                 <br>
+                    In a 
                     <figure><img src="images/Web Design/SQL/16.png" alt="16"></figure> 
-                    In a new connection.php script, I added functionality to connect to the database, so user information can be read and uploaded. This script should be included in every page.
+                    new connection.php script, I added functionality to connect to the database, so user information can be read and uploaded. 
+                    This script should be included in every page.
                 <br>
                 <br>
+                    In a 
                     <figure><img src="images/Web Design/SQL/17.png" alt="17"></figure> 
-                    In a new functions.php script, I added functionality to check if the user is logged in. If not, the index.php (Home page) shall redirect to the login.php (Login page). This script should be included in every page.
+                    new functions.php script, I added functionality to check if the user is logged in. 
+                    If not, the index.php (Home page) shall redirect to the login.php (Login page). 
+                    This script should be included in every page.
                 <br>
                 <br>
                     <b>Logging out</b>
@@ -178,8 +202,11 @@
                     <b>Changing my account</b>
                     <br>
                     <figure><img src="images/Web Design/SQL/18.png" alt="18"></figure> 
+                    Lastly, I created a myaccount.php (My account page), where you can see your username, update your username, and update your password. 
+                    The code for this page takes heavy inspiration from the signing up page. 
                     <figure><img src="images/Web Design/SQL/19.png" alt="19"></figure> 
-                    Lastly, I created a myaccount.php (My account page), where you can see your username, update your username, and update your password. The code for this page takes heavy inspiration from the signing up page. The current username is overwritten if the current username is correct and the new username is valid. The current password is overwritten if the current password is correct and the new password is put in twice and they match.
+                    The current username is overwritten if the current username is correct and the new username is valid. 
+                    The current password is overwritten if the current password is correct and the new password is put in twice and they match.
                 <br>
                 <br>
                     <h2 id="SQLfinishing">Finishing touches:</h2>
@@ -599,9 +626,9 @@
                 <br>
                     After this, I have been trying out various styles and color schemes. 
                     I settled on a personal style that I was happy with. 
+                <br>
+                <br>
                     <figure><img src="images/Web Design/Code2.jpg" alt="ProcessPictures"></figure>
-                <br>
-                <br>
                     It is a soft color palette creating a bit of personality, but will not take away from the clarity. 
                 <br>
                 <br> 
