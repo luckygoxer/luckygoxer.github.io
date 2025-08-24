@@ -100,19 +100,19 @@
                 <h1 id="WebSecurity">Securing a MySQL database using PHP</h1>
                 <time>July 3, 2025 - August 25, 2025</time>
                 <div class="invisibleformobile">
-                    <h2 id="#WebSecurityvideo">Video:</h2>
+                    <h2 id="WebSecurityvideo">Video:</h2>
                     <video class="maxaside" autoplay muted playsinline loop>
-                        <source src="images/Web Design/SQL/Database video.webm" type="video/webm">
+                        <source src="images/Web Design/WebSecurity/Web Security video.webm" type="video/webm">
                     </video>
                     <p id="invisibleforbig">Look at this page on your laptop/pc to watch the video!</p>
                     <br>
                 </div>
                 <p>
                     <h2 id="Preparation">Preparation:</h2>
-                    I began this project by taking an online course on the fundamentals of web security. Here, I learned about a lot of different prevention techniques. I learned about variable session IDs and secret IDs, neutralizing SQL metacharacters, using prepared statements, what null-bytes do, regular expressions (RE/regex), metacharacter Handling, and HTML encoding.
+                    I began this project by taking an online course on the fundamentals of web security. Here, I learned about a lot of different prevention techniques. I learned about variable session IDs and secret IDs, neutralizing SQL metacharacters, using prepared statements, what null-bytes do, regular expressions (RE/regex), metacharacter handling, and HTML encoding.
                 <br>
                 <br>
-                    I learned to “never trust user input” and to “never massage invalid input.” I got a lot of information on blacklisting and whitelisting, log monitoring software, and cross-site Scripting (XSS).
+                    I learned to “never trust user input” and to “never massage invalid input.” I got a lot of information on blacklisting and whitelisting, log monitoring software, and Cross-site Scripting (XSS).
                 <br>
                 <br> 
                     In the part about encryption, subjects like symmetric and asymmetric cryptography, the RSA algorithm, hashing (input/passwords) and salting it, Collision Resistance, digital signatures, and the benefits of multi-factor authentication are discussed.
@@ -196,7 +196,7 @@
                 <br>
                     <h2 id="InputValidation">Input validation:</h2>
                     I continued by adding username validation. Usernames now only allow a-z, A-Z, 0-9, _, and 3–20 characters. I made sure that if the chosen username already exists in the users table, the signup fails gracefully and tells the user to pick a different one. I implemented this because usernames are typically required to be unique.
-                <br>
+                    <img src="images/Web Design/WebSecurity/1.png" alt="1" width="600">
                 <br>
                     I also protected the other pages against SQL injection and XSS. Fields are validated both client-side (required) and server-side, and feedback ($message) is shown in the .alert div. 
                 <br>
@@ -214,14 +214,15 @@
                     •	Trimming whitespace
                 <br>    
                 <br>
-                    I replaced the regex (regular expression) check with validate_input() for consistent min/max length checks. I used validate_input() for both username and password. Usernames must now be alphanumeric (but you can still add _ if you want). A password is now required, and passwords must be 6–255 characters. All database access is via prepared statements (run_query()) to maximise security.
+                    I replaced the regex (regular expression) check with validate_input() for consistent min/max length checks. I used validate_input() for both username and password. Usernames must now be alphanumeric (but you can still add _ if you want). All database access is via prepared statements (run_query()) to maximise security.
                 <br>
                 <br>
                     <h2 id="SecuringPasswords">Securing passwords:</h2>
-                    I implemented password policy checks for minimum length, containing at least one uppercase, lowercase, a number, and a special character. The server rejects weak passwords, and the user potentially gets feedback on what to change when their new password is submitted.
+                    A password is now required, and passwords must be 6–255 characters. I implemented password policy checks for minimum length, containing at least one uppercase, lowercase, a number, and a special character. The server rejects weak passwords, and the user potentially gets feedback on what to change when their new password is submitted.
+                    <img src="images/Web Design/WebSecurity/2.png" alt="2" width="600">
                 <br>
-                <br>
-                    The biggest change is that all passwords are now hashed and verified securely. Hashing is a one-way function that converts a password into a fixed-length string that cannot be reversed. password_hash() automatically generates a unique salt for each password. It uses strong algorithms like bcrypt.
+                    The biggest change is that all passwords are now hashed and verified securely. Hashing is a one-way function that converts a password into a fixed-length string that cannot be reversed. password_hash() automatically generates a unique salt for each password. It uses strong algorithms like bcrypt. Here you can see the former clear-text passwords and the new hashed passwords.
+                    <img src="images/Web Design/WebSecurity/3.png" alt="3" width="600">
                 <br>
                 <br>
                     A salt is random data added to a password before hashing. It ensures that even if two users have the same password, their hashes differ. password_hash() automatically generates a salt internally, so I didn’t have to manage it manually. 
@@ -230,7 +231,7 @@
                     When verifying a password, password_verify() extracts the salt from the stored hash. It hashes the input password with the same salt and compares the result with the stored hash. Only if the stored hash and result match will the user be logged into the application. Using hashing and verifying, passwords are now safely secured.
                 <br>
                 <br>
-                    So, in short, how a user is authenticated is through a system that passes the password through a one-way hash function and stores the fingerprint of the password in our database. Whenever the user wants to log in, it takes the user-provided clear-text password, passes it through the same hashing function, and compares the result with whatever is in the database.
+                    So, in short, a user's authentication is achieved through a system that passes the password through a one-way hash function and stores the fingerprint of the password in our database. Whenever the user wants to log in, it takes the user-provided clear-text password, passes it through the same hashing function, and compares the result with whatever is in the database.
                 <br>
                 <br>
                     Because the salted and hashed passwords are stored in the database, clear-text passwords are never stored in the database. Passwords are also never stored on the same database the web application uses: the application’s PHP files are on the disk in Apache’s folder, and the users’ credentials are inside a MySQL database.
@@ -238,13 +239,17 @@
                 <br>
                     <h2 id="TicketingSystem">Adding a ticketing system:</h2>
                     Lastly, I added a ‘ticketing system’ (CSRF token generation) to protect against Web Trojans. A token is included in every form and is validated when submitting the form. This way, only the forms from this application will be accepted, and no forged requests from malicious pages. 
+                    <img src="images/Web Design/WebSecurity/4.png" alt="4" width="600">
                 <br>
                 <br>
                     <h2 id="WebSecurityback">Looking back:</h2>
+                    By the end of this project, I have implemented secure input handling by neutralizing metacharacters using prepared statements or escaping functions, to ensure that database queries in my application are SQL injection–resistant. I have also designed and implemented a password security system that enforces a strong password policy and stores user passwords using hashing and salting without storing any clear-text passwords. 
+                <br>
+                <br>
                     If I had more time, I would have liked to add log monitoring software to detect brute-force login attempts and catch suspicious activity. Multi-factor authentication would have been helpful to act as an extra lock in case someone guesses or leaks a password. Finally, I would implement secret IDs to stop people from getting access to restricted, server-side resources.
                 <br>
                 <br>
-                    During this project, I learned a lot about <b>Research</b>, <b>HTML</b>, <b>CSS</b>, <b>Web Design</b>, <b>MySQL</b>, <b>PHP</b>, <b>XAMPP</b>, <b>phpMyAdmin</b>, and <b>UI / UX Design</b>.
+                    During this project, I further developed my skills in <b>Research</b>, <b>HTML</b>, <b>CSS</b>, <b>Web Design</b>, <b>MySQL</b>, <b>PHP</b>, <b>XAMPP</b>, <b>phpMyAdmin</b>, <b>Web Security</b>, <b>Regular Expression (RE/regex)</b>, <b>Metacharacter Handling</b>, <b>HTML Encoding</b>, <b>Cross-site Scripting (XSS) Prevention</b>, <b>Hashing and Salting</b>, <b>CSRF Token Generation</b>, and <b>UI / UX Design</b>.
                 </p>
             </article>
 
@@ -252,7 +257,7 @@
                 <h1 id="MySQL">MySQL database using PHP</h1>
                 <time>April 20, 2025 - July 3, 2025</time>
                 <div class="invisibleformobile">
-                    <h2 id="#SQLvideo">Video:</h2>
+                    <h2 id="SQLvideo">Video:</h2>
                     <video class="maxaside" autoplay muted playsinline loop>
                         <source src="images/Web Design/SQL/Database video.webm" type="video/webm">
                     </video>

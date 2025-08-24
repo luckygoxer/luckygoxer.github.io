@@ -147,6 +147,13 @@ aside{
 
 aside.bigheader{
 	top: 168px; 
+	
+}
+
+aside.bigheader article.border {
+  max-height: 400px;   /* fixed height */
+  overflow-y: auto;    /* adds scrollbar inside */
+  margin-right: 20px;  /* small padding so scrollbar doesn't overlap text */
 }
 
 aside article{
