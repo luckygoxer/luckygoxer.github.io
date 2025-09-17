@@ -143,17 +143,22 @@ aside{
 	padding-top: 20px;
 	flex-grow:1;
 	flex-basis: 19vw;
+
+	max-height: 501px;   /* fixed height */
+	overflow-y: auto;    /* adds scrollbar inside */
+	overflow-x: hidden;     /* disable horizontal scrollbar */
+	padding-right: 31px;  /* small padding so scrollbar doesn't overlap text */
 }
 
 aside.bigheader{
 	top: 168px; 
-	
 }
 
 aside.bigheader article.border {
-  max-height: 400px;   /* fixed height */
-  overflow-y: auto;    /* adds scrollbar inside */
-  margin-right: 20px;  /* small padding so scrollbar doesn't overlap text */
+	max-height: 499;   /* fixed height */
+	overflow-y: auto;    /* adds scrollbar inside */
+	overflow-x: hidden;     /* disable horizontal scrollbar */
+	margin-right: 20px;  /* small padding so scrollbar doesn't overlap text */
 }
 
 aside article{
