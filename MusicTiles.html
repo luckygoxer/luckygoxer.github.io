@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<article class="FishyBusiness">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/L logo 57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/L logo 72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/L logo 114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/L logo 144x144.png">
+    <title>Lucas' Portfolio Website</title>
+<body>
+
+    <header>
+      <a href="#"><figure><img src="images/Grease-Me.jpg" alt="Grease"></figure></a>
+        
+        <script src="js/navsmall.js"></script>
+            
+        <nav>
+          <ul class="navsmall">
+                <li><a href="index.html">About me</a></li>
+                <li class="active"><a href="Games.html">Games</a></li>
+                <li><a href="Design.html">Design</a></li>
+                <li><a href="TheaterandMusic.html">Theater and Music</a></li>
+                <li><a href="EducationandCourses.html">Education and Courses</a></li>
+                <li><a href="Volunteerwork.html">Volunteer work</a></li>
+                <li><a href="Career.html">Career</a></li>
+                <li><a href="Skills.html">Skills</a></li>
+                <li><a href="Testimony.html">Testimony</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    <section>
+        <nav>
+            <ul class="navsmall">
+                <li><a href="Games.html">About games</a></li>
+                <li><a href="ForestFoxDX.html">ForestFoxDX</a></li>
+                <li><a href="FishyBusiness.html">Fishy Business</a></li>
+                <li><a href="TangledMemories.html">Tangled Memories</a></li>
+                <li><a href="SuperPlatformerDX.html">SuperPlatformerDX</a></li>
+                <li><a href="ChickenTrekker.html">Chicken Trekker</a></li>
+                <li class="active"><a href="MusicTiles.html">Music Tiles</a></li>
+                <li><a href="LevelDesign.html">Level Design</a></li>
+                <li><a href="ProceduralArt.html">Procedural Art</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    </header>
+
+<section class="chonk">
+<main>
+  <aside class="bigheader">
+    <section class="formContainer">
+      <article class="border">
+        <h2>Go to:</h2>
+          <ul>
+            <li><a href="#"><b>About</b></a></li>
+            <li class="invisibleformobile"><a href="#Game"><b>Game</b></a></li>
+            <li><a href="#Screenshots"><b>Screenshots</b></a></li>
+            <li><a href="#Process"><b>Process</b></a></li>
+            <li><a href="#Link"><b>Link</b></a></li>
+          </ul>
+      </article>
+      </section>
+    </aside>
+
+<section class="articles">
+    <article>
+        <h1>Music Tiles - prototype</h1>
+        <time>27 September, 2025</time>
+        <h2>About:</h2>
+        <p>On 27 September 2025, my sixth game was released. It is an arcade-style game with an unlimited mode. 
+            This was the first game where I created everything myself; code, music, sprites, etc.
+    <br>
+        In this game, you have to type the right letters to make them disappear.
+        For this prototype, I focused on expanding my C# knowledge over the visuals. 
+        </p>
+    <br>
+        <h2>Created by:</h2>
+        <img class="mylogo" src="images/Inspired/luckygoxer logo black.png" alt="luckygoxer logo black">
+    <br>
+        <h2>Engine:</h2>
+        <p>Made in Unity</p>
+    <br>
+        <h2>Platforms:</h2>
+        <p>Windows, HTML5</p>
+    <br>
+        <script src="/Detect.js/detect.min.js"></script>
+        <script src="/Detect.js/main.js"></script>
+
+      <div class="invisibleformobile">
+        <h2 id="Game">Game:</h2>
+
+        <div id="unity-container" class="unity-desktop">
+            <canvas id="unity-canvas" width=1280 height=720 tabindex="-1"></canvas>
+            <div id="unity-loading-bar">
+              <div id="unity-logo"></div>
+              <div id="unity-progress-bar-empty">
+                <div id="unity-progress-bar-full"></div>
+              </div>
+            </div>
+            <div id="unity-warning"> </div>
+            <div id="unity-footer">
+              <div id="unity-webgl-logo"></div>
+              <div id="unity-fullscreen-button"></div>
+            </div>
+          </div>
+          <script>
+
+      var container = document.querySelector("#unity-container");
+      var canvas = document.querySelector("#unity-canvas");
+      var loadingBar = document.querySelector("#unity-loading-bar");
+      var progressBarFull = document.querySelector("#unity-progress-bar-full");
+      var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+      var warningBanner = document.querySelector("#unity-warning");
+
+      // Shows a temporary message banner/ribbon for a few seconds, or
+      // a permanent error message on top of the canvas if type=='error'.
+      // If type=='warning', a yellow highlight color is used.
+      // Modify or remove this function to customize the visually presented
+      // way that non-critical warnings and error messages are presented to the
+      // user.
+      function unityShowBanner(msg, type) {
+        function updateBannerVisibility() {
+          warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
+        }
+        var div = document.createElement('div');
+        div.innerHTML = msg;
+        warningBanner.appendChild(div);
+        if (type == 'error') div.style = 'background: red; padding: 10px;';
+        else {
+          if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
+          setTimeout(function() {
+            warningBanner.removeChild(div);
+            updateBannerVisibility();
+          }, 5000);
+        }
+        updateBannerVisibility();
+      }
+
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/Music Tiles.loader.js";
+      var config = {
+        dataUrl: buildUrl + "/Music Tiles.data.unityweb",
+        frameworkUrl: buildUrl + "/Music Tiles.framework.js.unityweb",
+        codeUrl: buildUrl + "/Music Tiles.wasm.unityweb",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "luckygoxer",
+        productName: "Music Tiles - prototype",
+        productVersion: "0.8",
+        showBanner: unityShowBanner,
+      };
+
+      // By default, Unity keeps WebGL canvas render target size matched with
+      // the DOM size of the canvas element (scaled by window.devicePixelRatio)
+      // Set this to false if you want to decouple this synchronization from
+      // happening inside the engine, and you would instead like to size up
+      // the canvas DOM size and WebGL render target sizes yourself.
+      // config.matchWebGLToCanvasSize = false;
+
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        // Mobile device style: fill the whole browser client area with the game canvas:
+
+        var meta = document.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+        document.getElementsByTagName('head')[0].appendChild(meta);
+        container.className = "unity-mobile";
+        canvas.className = "unity-mobile";
+
+        // To lower canvas resolution on mobile devices to gain some
+        // performance, uncomment the following line:
+        // config.devicePixelRatio = 1;
+
+
+      } else {
+        // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
+
+        canvas.style.width = "calc(63vw)";
+            canvas.style.height = "calc(63vw * 9 / 16)";
+      }
+
+      loadingBar.style.display = "block";
+
+      var script = document.createElement("script");
+      script.src = loaderUrl;
+      script.onload = () => {
+        createUnityInstance(canvas, config, (progress) => {
+          progressBarFull.style.width = 100 * progress + "%";
+              }).then((unityInstance) => {
+                loadingBar.style.display = "none";
+                fullscreenButton.onclick = () => {
+                  unityInstance.SetFullscreen(1);
+                };
+              }).catch((message) => {
+                alert(message);
+              });
+            };
+
+      document.body.appendChild(script);
+
+    </script>
+    <br>
+    <br>
+      </div>
+        <h2 id="Screenshots">Screenshots:</h2>
+        <img class="maxaside" src="images/Games/MusicTiles1.png" alt="MusicTiles1">
+        <img class="maxaside" src="images/Games/MusicTiles2.png" alt="MusicTiles2">
+        <img class="maxaside" src="images/Games/MusicTiles3.png" alt="MusicTiles3">
+      <br>
+        <h2 id="Process">Process:</h2>
+        <p>Coming soon!</p>
+    <br>
+        <h2 id="Link">Link:</h2>
+        <p class="invisibleformobile">Download it for free on <a href="https://luckygoxer.itch.io/music-tiles-prototype" target="_blank">my Itch page!</a></p>
+        <p class="invisibleforpc">Look at this page on your laptop/pc to play or download the Windows version for free on <a href="https://luckygoxer.itch.io/music-tiles-prototype" target="_blank">my Itch page!</a></p>
+    </article>
+</section>
+</main>
+
+<footer>
+    <section class="width">
+        <section class="formContainer">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <h1>Contact me!</h1>
+                <input type="hidden" name="access_key" value="5f4a45a6-2d74-4695-99b8-126965590da4">
+                <input type="text" name="name" placeholder="Your name" />
+                <input type="text" name="email" placeholder="Your email" />
+                <input type="text" name="phone" placeholder="Your phone number (optional)" />
+                <textarea name="message" placeholder="Your message"></textarea>
+                <button name="submit" type="submit">Send Message</button>
+            </form>
+        </section>
+    
+        <nav class="footerNavigation">
+            <h2>Find Me On:</h2>
+            <ul>
+                <li><a href="https://luckygoxer.itch.io/" target="_blank"><img src="images/Empty.png" alt="itch" /></a></li>
+                <li><a href="https://www.linkedin.com/in/lucas-van-den-heuvel-a93b10137/" target="_blank"><img src="images/Empty.png" alt="linkedin" /></a></li>
+                <li><a href="https://discordapp.com/users/luckygoxer#5798/" target="_blank"><img src="images/Empty.png" alt="discord" /></a></li>
+                <li><a href="https://www.bible.com/users/heuvellucas" target="_blank"><img src="images/Empty.png" alt="bible" /></a></li>
+            </ul>
+        </nav>
+    </section>
+</footer>
+
+</body>
+</article>
+</html>
