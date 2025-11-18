@@ -144,7 +144,7 @@ aside{
 	flex-grow:1;
 	flex-basis: 19vw;
 
-	max-height: 501px;   /* fixed height */
+	max-height: 531px;   /* fixed height */
 	overflow-y: auto;    /* adds scrollbar inside */
 	overflow-x: hidden;     /* disable horizontal scrollbar */
 	padding-right: 31px;  /* small padding so scrollbar doesn't overlap text */
@@ -152,6 +152,7 @@ aside{
 
 aside.bigheader{
 	top: 168px; 
+	max-height: 492px;
 }
 
 aside.bigheader article.border {
