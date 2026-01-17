@@ -576,3 +576,32 @@ canvas {
 .invisible {
     display: none;
 }
+
+#albums-container .card {
+	padding: 8px;
+	background-color: #725752;
+	box-sizing: border-box;
+
+	border-radius: 30px;
+    max-width: 1000px;
+	width: calc(63vw * 9 / 15.75);
+	height: calc(63vw * 9 / 15.75);
+    height: auto;
+    display: block;
+	padding-top: 5px;
+	padding-bottom: 15px;
+	margin-bottom: 18px;
+	z-index: 2;
+	position: relative;
+}
+
+.card .card-img-top{
+	border-radius: 30px;
+    max-width: 1000px;
+	width: calc(63vw * 9 / 15.75 - 16px);
+	height: calc(63vw * 9 / 15.75 - 16px);
+	padding-top: 5px;
+	margin-bottom: 10px;
+	z-index: 2;
+	position: relative;
+}
