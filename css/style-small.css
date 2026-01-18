@@ -48,7 +48,6 @@ img.linkimg{
 	object-fit: contain;
 }
 
-
 aside article{
 	width: calc(100vw - 100px);
 }
@@ -100,4 +99,7 @@ img.smallsmall2{
 .next {
 	flex-direction: column; 
 }
-  
+
+ul.navsmall li a{
+	font-size: x-large;
+}

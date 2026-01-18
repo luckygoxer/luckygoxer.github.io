@@ -80,7 +80,7 @@ header{
 header img {
 	border-radius: 50%;
 	margin: 0 50px 0 0;
-	width: 10%;
+	width: 9.5%;
 	min-width:75px;
 	max-width: 150px;
 	float: right;
@@ -144,15 +144,15 @@ aside{
 	flex-grow:1;
 	flex-basis: 19vw;
 
-	max-height: 531px;   /* fixed height */
+	max-height: 581px;   /* fixed height */
 	overflow-y: auto;    /* adds scrollbar inside */
 	overflow-x: hidden;     /* disable horizontal scrollbar */
-	padding-right: 31px;  /* small padding so scrollbar doesn't overlap text */
+	padding-right: 35px;  /* small padding so scrollbar doesn't overlap text */
 }
 
 aside.bigheader{
 	top: 168px; 
-	max-height: 492px;
+	max-height: 519px;
 }
 
 aside.bigheader article.border {
