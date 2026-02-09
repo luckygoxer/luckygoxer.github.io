@@ -127,6 +127,11 @@ main section article figure img{
 	max-width: 18vw;
 }
 
+.squared{
+	min-width: 150px;
+	max-width: 170px;
+}
+
 .rounded{
 	border-radius: 20px;
 	min-width: 150px;
