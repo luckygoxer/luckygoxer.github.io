@@ -64,19 +64,35 @@
     <h1>Let's Talk!</h1>
     <img class="smallsmall2" src="images/Drankje-Me.png" height="600px" alt="Drankje" >
 
+    <br>
+    <br>
+
         <section id="invisibleforsmall" class="formContainer formContainermiddle formContact">
-            <br>
-            <br>
-            <form action="https://api.web3forms.com/submit" method="POST">
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
                 <h1 style="text-align: center; color: white; font-size: x-large; margin-bottom: 4px;">Let's talk!</h1>
-                <input type="hidden" name="access_key" value="5f4a45a6-2d74-4695-99b8-126965590da4">
-                <input type="text" name="name" placeholder="Your name" />
-                <input type="text" name="email" placeholder="Your email" />
-                <input type="text" name="phone" placeholder="Your phone number (optional)" />
-                <textarea type="text" name="message" placeholder="Your message"></textarea>
-                <button type="text" name="submit" type="submit">Send Message</button>
-            </form>
-        </section>
+            <input type="hidden" name="access_key" value="5f4a45a6-2d74-4695-99b8-126965590da4">
+            <div class="field">
+                <input type="text" name="name" placeholder="Your name" required>
+                <small class="error"></small>
+            </div>
+            <div class="field">
+                <input type="text" name="email" placeholder="Your email" required>
+                <small class="error"></small>
+            </div>
+            <div class="field">
+                <input type="text" name="phone" placeholder="Your phone number (optional)">
+                <small class="error"></small>
+            </div>
+            <div class="field">
+                <textarea type="text" name="message" placeholder="Your message" required></textarea>
+                <small class="error"></small>
+            </div>
+            <button type="text" type="submit">Send Message</button>
+            <p id="successMsg"></p>
+        </form>
+
+        <script src="js/formValidation.js"></script>
+    </section>
         
         <section id="invisibleforbig">
             <p>
@@ -94,17 +110,34 @@
 </main>
 
 <aside id="invisibleforbig">
-    <section class="formContainer formContainermiddle">
-        <form action="https://api.web3forms.com/submit" method="POST">
+    <section class="formContainer">
+        <form id="contactForm formContainermiddle" action="https://api.web3forms.com/submit" method="POST">
             <h1 style="text-align: center; font-size: x-large; margin-bottom: 4px;">Let's talk!</h1>
             <input type="hidden" name="access_key" value="5f4a45a6-2d74-4695-99b8-126965590da4">
-            <input type="text" name="name" placeholder="Your name" />
-            <input type="text" name="email" placeholder="Your email" />
-            <input type="text" name="phone" placeholder="Your phone number (optional)" />
-            <textarea type="text" name="message" placeholder="Your message"></textarea>
-            <button type="text" name="submit" type="submit">Send Message</button>
+            <div class="field">
+                <input type="text" name="name" placeholder="Your name" required>
+                <small class="error"></small>
+            </div>
+            <div class="field">
+                <input type="text" name="email" placeholder="Your email" required>
+                <small class="error"></small>
+            </div>
+            <div class="field">
+                <input type="text" name="phone" placeholder="Your phone number (optional)">
+                <small class="error"></small>
+            </div>
+            <div class="field">
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <small class="error"></small>
+            </div>
+            <button type="submit">Send Message</button>
+            <p id="successMsg"></p>
         </form>
+
+        <script src="js/formValidation.js"></script>
     </section>
+
+    <script src="js/formValidation.js"></script>
 </aside>
 
 <footer>

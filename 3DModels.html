@@ -203,7 +203,26 @@
         <img class="maxaside" src="images/3D Models/TreeHouse1.jpg" alt="TreeHouse1">
     <br>
         <h2 id="ProcessTreehouse">Process:</h2>
-        <p>During this project, I learned a lot about <b>Autodesk Maya</b>, and <b>3D Modeling</b>.
+        <figure><img src="images/3D Models/Moodboard_LucasvandenHeuvel.png" alt="Mood board">
+        <figcaption>Mood board</figcaption></figure>     
+        <p>The idea for this project was to create a treehouse in a cherry blossom tree in transition from pink to green. 
+        I started this project by creating a mood board and sketches based on that. 
+        This gave me a good idea of what I was aiming for. 
+    <br>
+    <br>
+        I focused on texture scaling that fits the treehouse and good color use. 
+        The UVs are welded where possible, and the UVs fit in the 0-1 space. 
+        The mesh is within the poly limit, with beveled edges and optimization.
+    <br>
+    <br>
+        Unfortunately, due to time contraints I could not finish the interior.
+        <figure><img src="images/3D Models/15_Sketches_LucasvandenHeuvel.png" alt="Sketches">
+        <figcaption>Concept art</figcaption></figure>
+    <br>
+        For my first 3d model, I am quite content with the result.
+    <br>
+    <br>
+        During this project, I learned a lot about <b>Autodesk Maya</b>, and <b>3D Modeling</b>.
     <br>
     <br>
     </p>
@@ -216,15 +235,31 @@
 <footer>
     <section class="width">
         <section class="formContainer">
-            <form action="https://api.web3forms.com/submit" method="POST">
-                <h1>Contact me!</h1>
-                <input type="hidden" name="access_key" value="5f4a45a6-2d74-4695-99b8-126965590da4">
-                <input type="text" name="name" placeholder="Your name" />
-                <input type="text" name="email" placeholder="Your email" />
-                <input type="text" name="phone" placeholder="Your phone number (optional)" />
-                <textarea name="message" placeholder="Your message"></textarea>
-                <button name="submit" type="submit">Send Message</button>
-            </form>
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <h1>Contact me!</h1>
+            <input type="hidden" name="access_key" value="5f4a45a6-2d74-4695-99b8-126965590da4">
+            <div class="field">
+                <input type="text" name="name" placeholder="Your name" required>
+                <small class="error"></small>
+            </div>
+            <div class="field">
+                <input type="text" name="email" placeholder="Your email" required>
+                <small class="error"></small>
+            </div>
+            <div class="field">
+                <input type="text" name="phone" placeholder="Your phone number (optional)">
+                <small class="error"></small>
+            </div>
+            <div class="field">
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <small class="error"></small>
+            </div>
+            <button type="submit">Send Message</button>
+            <p id="successMsg"></p>
+        </form>
+    </section>
+
+    <script src="js/formValidation.js"></script>
         </section>
     
         <nav class="footerNavigation">

@@ -44,7 +44,7 @@
     <aside id="invisibleforsmall">
         <article class="border">
             <h2>Currently I do:</h2>
-            <time>October 23, 2025</time>
+            <time>February 23, 2026</time>
             <ul>
                 <li>Game Design</li>
                 <li>Gamification</li>
@@ -53,13 +53,12 @@
                 <li>Adobe Photoshop</li>
                 <li>Adobe Première Pro</li>
                 <li>Singing</li>
-                <li>Cash register</li>
             </ul>
         </article>
         
         <article class="border">
             <h2>I am developing skills in:</h2>
-            <time>October 23, 2024</time>
+            <time>February 23, 2026</time>
             <ul>
                 <li>Unreal Engine</li>
                 <li>Unity</li>
@@ -69,14 +68,13 @@
                 <li>Web Security</li>
                 <li>WordPress</li>
                 <li>JavaScript</li>
-                <li>React</li>
-                <li>MySQL / PHP / XAMPP / phpMyAdmin</li>
                 <li>Figma</li>
                 <li>Adobe Photoshop</li>
                 <li>Adobe Première Pro</li>
                 <li>German</li>
                 <li>Singing</li>
-                <li>Dance</li>
+                <li>Salsa</li>
+                <li>Bachata</li>
                 <li>Business thinking</li>
             </ul>
         </article>
@@ -85,7 +83,7 @@
 <section class="articles">
     <article>
         <h1>Hard skills:</h1>
-        <time>November 19, 2025</time>
+        <time>February 23, 2026</time>
         <ul>
             <li>Game Design</li>
             <li>Level Design</li>
@@ -152,6 +150,10 @@
             <br>
             <li>Singing</li>
             <li>Dance</li>
+            <li>Quick Step</li>
+            <li>Cha Cha</li>
+            <li>Salsa</li>
+            <li>Bachata</li>
             <li>Theater</li>
             <li>Screenwriting</li>
             <br>
@@ -181,7 +183,7 @@
     <aside id="invisibleforbig">
         <article class="border">
             <h2>Currently I do:</h2>
-            <time>October 23, 2025</time>
+            <time>February 23, 2026</time>
             <ul>
                 <li>Game Design</li>
                 <li>Gamification</li>
@@ -190,13 +192,12 @@
                 <li>Adobe Photoshop</li>
                 <li>Adobe Première Pro</li>
                 <li>Singing</li>
-                <li>Cash register</li>
             </ul>
         </article>
         
         <article class="border">
             <h2>I am developing skills in:</h2>
-            <time>October 23, 2024</time>
+            <time>February 23, 2026</time>
             <ul>
                 <li>Unreal Engine</li>
                 <li>Unity</li>
@@ -206,14 +207,13 @@
                 <li>Web Security</li>
                 <li>WordPress</li>
                 <li>JavaScript</li>
-                <li>React</li>
-                <li>MySQL / PHP / XAMPP / phpMyAdmin</li>
                 <li>Figma</li>
                 <li>Adobe Photoshop</li>
                 <li>Adobe Première Pro</li>
                 <li>German</li>
                 <li>Singing</li>
-                <li>Dance</li>
+                <li>Salsa</li>
+                <li>Bachata</li>
                 <li>Business thinking</li>
             </ul>
         </article>
@@ -224,16 +224,31 @@
 <footer>
     <section class="width">
         <section class="formContainer">
-            <form action="https://api.web3forms.com/submit" method="POST">
-                <h1>Contact me!</h1>
-                <input type="hidden" name="access_key" value="5f4a45a6-2d74-4695-99b8-126965590da4">
-                <input type="text" name="name" placeholder="Your name" />
-                <input type="text" name="email" placeholder="Your email" />
-                <input type="text" name="phone" placeholder="Your phone number (optional)" />
-                <textarea name="message" placeholder="Your message"></textarea>
-                <button name="submit" type="submit">Send Message</button>
-            </form>
-        </section>
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <h1>Contact me!</h1>
+            <input type="hidden" name="access_key" value="5f4a45a6-2d74-4695-99b8-126965590da4">
+            <div class="field">
+                <input type="text" name="name" placeholder="Your name" required>
+                <small class="error"></small>
+            </div>
+            <div class="field">
+                <input type="text" name="email" placeholder="Your email" required>
+                <small class="error"></small>
+            </div>
+            <div class="field">
+                <input type="text" name="phone" placeholder="Your phone number (optional)">
+                <small class="error"></small>
+            </div>
+            <div class="field">
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <small class="error"></small>
+            </div>
+            <button type="submit">Send Message</button>
+            <p id="successMsg"></p>
+        </form>
+    </section>
+
+    <script src="js/formValidation.js"></script>
     
         <nav class="footerNavigation">
             <h2>Find Me On:</h2>
