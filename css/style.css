@@ -149,7 +149,7 @@ aside{
 	flex-grow:1;
 	flex-basis: 19vw;
 
-	max-height: 581px;   /* fixed height */
+	max-height: calc(100vh - 126px);   /* fixed height */
 	overflow-y: auto;    /* adds scrollbar inside */
 	overflow-x: hidden;     /* disable horizontal scrollbar */
 	padding-right: 35px;  /* small padding so scrollbar doesn't overlap text */
@@ -157,7 +157,7 @@ aside{
 
 aside.bigheader{
 	top: 168px; 
-	max-height: 519px;
+	max-height: calc(100vh - 188px);  
 }
 
 aside.bigheader article.border {
@@ -612,16 +612,10 @@ canvas {
 	position: relative;
 }
 
-
-
-
-
-/* ===== FORM VALIDATION ADD-ON ===== */
-
 .formContainer input.errorBorder,
 .formContainer textarea.errorBorder {
     border: 2px solid #ff4d4d;
-    background: white;   /* <-- blijft wit */
+    background: white;  
 }
 
 .formContainer input.valid,
@@ -630,7 +624,6 @@ canvas {
     background: white;
 }
 
-/* Error tekst – GEEN vaste hoogte */
 .formContainer small.error {
     display: none;
     color: #ff4d4d;
@@ -644,7 +637,6 @@ canvas {
     display: block;
 }
 
-/* Shake animatie */
 @keyframes shake {
     0% { transform: translateX(0); }
     25% { transform: translateX(-4px); }
@@ -657,7 +649,6 @@ canvas {
     animation: shake 0.25s;
 }
 
-/* Success message */
 #successMsg {
     color: limegreen;
     font-weight: bold;
@@ -670,7 +661,6 @@ canvas {
     opacity: 1;
 }
 
-/* Loading spinner */
 button.loading {
     position: relative;
     pointer-events: none;
