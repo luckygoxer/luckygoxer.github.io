@@ -103,17 +103,17 @@
         <h2 id="Process">Process:</h2>
         <h4 id="Concept">Game concept</h4>
         <p>
+            <figure><img src="images/Games/Process/ForestFoxDX/pic1.jpg" alt="ProcessPictures"></figure>
             The idea of this game was to make a fun 2D side-scrolling platformer. 
             I used Unreal Engine 5 to create this game. 
             I chose this engine specifically because it is an excellent engine, so I wanted to get to know the engine a little bit and experiment with it. 
             I started my biggest project yet by making some sketches with ideas.
             <br>
             <br>
-            <figure><img src="images/Games/Process/ForestFoxDX/pic1.jpg" alt="ProcessPictures"></figure>
+            <figure><img src="images/Games/Process/ForestFoxDX/pic2.jpg" alt="ProcessPictures"></figure>
             This is a sketch of my first concept about a person who could attack by throwing hair, cutting it off, and automatically tying up enemies.
             <br>
             <br>
-            <figure><img src="images/Games/Process/ForestFoxDX/pic2.jpg" alt="ProcessPictures"></figure>
             The person can also swing from objects to cross gaps. This could make for tricky platforming sections.
             <br>
             <br>
@@ -121,16 +121,16 @@
             This is my final concept for this game, where you can see the assets I want to use for the levels.
             <br>
             <br>
-            <figure><img src="images/Games/Process/ForestFoxDX/pic4.jpg" alt="ProcessPictures"></figure>
             This is a sketch of the character's movement in the game, including the duck mechanic, where the hitbox will be turned off, only when the player ducks AND is behind a bush. 
+            <figure><img src="images/Games/Process/ForestFoxDX/pic4.jpg" alt="ProcessPictures"></figure>
             Unfortunately, due to time constraints, I did not get the chance to properly implement this mechanic.
             <br>
             <br>
-            <figure><img src="images/Games/Process/ForestFoxDX/pic5.jpg" alt="ProcessPictures"></figure>
             Lastly, I made a little storyboard, so the player knows why things need to get done in the game.
             <br>
             <br>
             <h4 id="Building">Building</h4>
+            <figure><img src="images/Games/Process/ForestFoxDX/pic5.jpg" alt="ProcessPictures"></figure>
             I started by watching many, many tutorials on Unreal Engine 5. 
             Because moving and jumping did not work, I kept experimenting until I eventually found a set-up that succeeded. 
             This was the first part that I built myself. After this, I built everything myself.
@@ -143,23 +143,24 @@
             I wanted the last level to feel fast-paced and the hardest of the three.
             <br>
             <br>
-            <ul class="next">
-                <li>
-                    <figure><img src="images/Games/Process/ForestFoxDX/pic6.jpg" alt="ProcessPictures">
-                    <figcaption>The first screenshot demonstrates level 1, where the player must find the Lost Gem.</figcaption></figure>
-                </li>
-                <li>
-                    <figure><img src="images/Games/Process/ForestFoxDX/pic7.jpg" alt="ProcessPictures">
-                    <figcaption>The second screenshot demonstrates level 2, where the player must collect all the cherries.</figcaption></figure>
-                </li>
-
-                <li>
-                    <figure><img src="images/Games/Process/ForestFoxDX/pic8.jpg" alt="ProcessPictures">
-                    <figcaption>The third screenshot demonstrates the final level, where the player must avoid the eagle enemies that are constantly flying over in a fixed pattern.</figcaption></figure>
-                </li>
-            </ul>
-            <figure><img src="images/Games/Process/ForestFoxDX/pic9.jpg" alt="ProcessPictures"></figure>
-            <figure><img src="images/Games/Process/ForestFoxDX/pic10.jpg" alt="ProcessPictures"></figure>
+            <img src="images/Games/Process/ForestFoxDX/pic6.jpg" alt="ProcessPictures" width="600">
+            The first screenshot demonstrates level 1, where the player must find the Lost Gem.
+            <br>
+            <br>
+            <img src="images/Games/Process/ForestFoxDX/pic7.jpg" alt="ProcessPictures" width="600">
+            The second screenshot demonstrates level 2, where the player must collect all the cherries.
+            <br>
+            <br>
+            <img src="images/Games/Process/ForestFoxDX/pic8.jpg" alt="ProcessPictures" width="600">
+            The third screenshot demonstrates the final level, where the player must avoid the eagle enemies that are constantly flying over in a fixed pattern.
+            <br>
+            <br>
+            <img src="images/Games/Process/ForestFoxDX/pic9.jpg" alt="ProcessPictures" width="600">
+            <br>
+            <br>
+            <img src="images/Games/Process/ForestFoxDX/pic10.jpg" alt="ProcessPictures" width="600">
+            <br>
+            <br>
             For each level, I made a separate ‘WinWidget.’ 
             For levels 1 and 2 it says Well Done! and for the final level, it says You Win! 
             In these widgets, the player can see the objective of the next level, as well as their Best Time and High Score for this level. 
@@ -181,8 +182,8 @@
             It did not seem fair and fun to have them spawn anywhere and die, without you being able to do anything about it, so I created a pattern.
             <br>
             <br>
-            <figure><img src="images/Games/Process/ForestFoxDX/pic12.jpg" alt="ProcessPictures"></figure>
-            <figure><img src="images/Games/Process/ForestFoxDX/pic13.jpg" alt="ProcessPictures"></figure>
+            <img src="images/Games/Process/ForestFoxDX/pic12.jpg" alt="ProcessPictures" width="295">
+            <img src="images/Games/Process/ForestFoxDX/pic13.jpg" alt="ProcessPictures" width="295">
             Here you can see how I created the pattern. 
             I set the enemy spawners apart the right amount, gave the eagles the same speed, and used a timer to make sure the next four eagles would perfectly match the pattern (Time = Distance / Speed).
             <br>
@@ -217,8 +218,8 @@
             I think that with these additional inputs, everyone can enjoy the game in their preferred way.
             <br>
             <br>
-            <figure><img src="images/Games/Process/ForestFoxDX/pic15.jpg" alt="ProcessPictures"></figure>
             A first-year student noticed that my Current Time-timer only gave full numbers and no decimals. 
+            <figure><img src="images/Games/Process/ForestFoxDX/pic15.jpg" alt="ProcessPictures"></figure>
             He told me that if I wanted to better the speedrunning experience, I could change this to decimal numbers. 
             Therefore, I changed my timer from an ‘integer’ to a ‘float'. Now you can see three decimals. 
             This could be considered nitpicking, but I consider it a good addition to the game, adding to the fluency and experience of the game. 

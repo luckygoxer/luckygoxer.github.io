@@ -105,7 +105,7 @@
     <br>
         <h2 id="RendersAndUnity">Renders and Unity:</h2>
     <p>
-        <figure><img src="images/Games/ProceduralArt/Picture1.png" alt="Picture1"></figure>
+        <img src="images/Games/ProceduralArt/Picture1.png" alt="Picture1" width="600">
         Here you can get a quick impression of my town. 
         The main mechanics are procedural landmass generation and random building generation.
     <br>
@@ -212,27 +212,29 @@
     <br>
         Of course, the idea with the houses with different levels could also be used to create pine trees with different heights, decks of leaves, and rotations, similar to the buildings. 
         The random locations for spawning the houses could also be used for trees, rocks, etcetera.
+        <figure><img src="images/Games/ProceduralArt/Picture13.png" alt="Picture13"></figure>
     <br>
     <br>
         <b>UV’ing</b>
         <br>
-        <figure><img src="images/Games/ProceduralArt/Picture13.png" alt="Picture13"></figure>
         I have UV’d the Building Block meshes for the houses by creating a camera-based UV. 
         I auto seamed it and adjusted the UVs to fit on the UV 1 by 1. 
         The UV’ing enables tiling.
     <br>
     <br>
         <h4 id="Materials">Materials</h4>
-        I started creating texture materials using Substance 3D Designer. 
         <figure><img src="images/Games/ProceduralArt/Picture14.png" alt="Picture14"></figure>
+        I started creating texture materials using Substance 3D Designer. 
         There are exposed parameters in Unity so the materials can be customized without having to use Substance 3D Designer again. 
         I have created wooden logs, planks, and hay roof textures and applied them to my houses. 
-        After adjusting the tiling in Unity, all textures seem to have a proper scale for their respective surfaces. 
         <figure><img src="images/Games/ProceduralArt/Picture16.png" alt="Picture16"></figure>
+        After adjusting the tiling in Unity, all textures seem to have a proper scale for their respective surfaces. 
     <br>
     <br>
         Now my resulting structures and meshes match my visual research and the style of Morthal.
-        <img src="images/Games/ProceduralArt/Picture15.png" alt="Picture15" width="300">
+        <br id="invisibleformobile">
+        <br id="invisibleformobile">
+        <figure><img src="images/Games/ProceduralArt/Picture15.png" alt="Picture15"></figure>
     <br>
     <br>
         <h4 id="Customizability">Customizability</h4>
@@ -283,8 +285,8 @@
         <figure><img src="images/Games/ProceduralArt/Picture3.png" alt="Picture3"></figure>
         My proudest accomplishment is the procedural landscape generation. 
         In the MeshGenerator code, I started with only some code to create a triangle and it turned into a complex vertices system which generates triangles between vertices when runtime is started and a complicated Noise Map with adjustable width, height, noise scale, seed, octaves, persistence, lacunarity, an offset and even adjustable Level Of Detail parameters in the Unity editor, which can still be changed and customized after generation in runtime and update live.
-        <figure><img src="images/Games/ProceduralArt/Picture5.png" alt="Picture5"></figure>
-        <figure><img src="images/Games/ProceduralArt/Picture4.png" alt="Picture4"></figure>
+        <img src="images/Games/ProceduralArt/Picture5.png" alt="Picture5" width="295">
+        <img src="images/Games/ProceduralArt/Picture4.png" alt="Picture4" width="295">
         <video width="600px" autoplay muted playsinline loop>
             <source src="images/Games/ProceduralArt/Map Generator.mp4" type="video/mp4">
         </video>
