@@ -65,12 +65,13 @@
                 <li><a href="#"><b>About</b></a></li>
                 <li><a href="#Videos"><b>Videos</b></a></li>
                 <li><a href="#RendersAndUnity"><b>Renders and Unity</b></a></li>
-                <li><a href="#Research"><b>Research</b></a></li>
-                <li><a href="#MeshesAndStructures"><b>Meshes and structures</b></a></li>
-                <li><a href="#Materials"><b>Materials</b></a></li>
-                <li><a href="#Customizability"><b>Customizability</b></a></li>
-                <li><a href="#LookAndFeel"><b>Look and feel</b></a></li>
-                <li><a href="#MyProudestAccomplishment"><b>My proudest accomplishment</b></a></li>
+                <li><a href="#Process"><b>Process</b></a></li>
+                <h2 class="indent"><li><a href="#Research"><b>Research</b></a></li></h2>
+                <h2 class="indent"><li><a href="#MeshesAndStructures"><b>Meshes and structures</b></a></li></h2>
+                <h2 class="indent"><li><a href="#Materials"><b>Materials</b></a></li></h2>
+                <h2 class="indent"><li><a href="#Customizability"><b>Customizability</b></a></li></h2>
+                <h2 class="indent"><li><a href="#LookAndFeel"><b>Look and feel</b></a></li></h2>
+                <h2 class="indent"><li><a href="#Conclusion"><b>Conclusion</b></a></li></h2>
                 </ul>
             </article>
         </section>
@@ -109,7 +110,8 @@
         The main mechanics are procedural landmass generation and random building generation.
     <br>
     <br>
-        <h2 id="Research"> Research:</h2>
+        <h2 id="Process"> Process:</h2>
+        <h4 id="Research">Research</h4>
         Derived from the sample image, the Morthal theme is based on a village in the North West and consists of various kinds of meshes and textures. 
         The climate is very cold and snowy, so the Morthal theme uses houses, roads, and potentially pine trees, rocks, and water as basic building blocks. 
         The landscape has grass, hay or straw, sand, water, and mountains. 
@@ -141,9 +143,7 @@
         You can read more about these techniques in part 4 about my own contributions.
     <br>
     <br>
-        <h2 id="MeshesAndStructures">Meshes and structures</h2>
-        <b>Map generation</b>
-        <br>
+        <h4 id="MeshesAndStructures">Meshes and structures</h4>
         <figure><img src="images/Games/ProceduralArt/Picture3.png" alt="Picture3"></figure>
         I imported HDRP and the Substance 3D for Unity plugin in advance and started by working on the landscape. 
         I created a gradient so a higher point will have a brighter color and a lower point will have a darker color. 
@@ -185,8 +185,8 @@
         <b>Building generation</b>
         <br>
         <figure><img src="images/Games/ProceduralArt/Picture6.png" alt="Picture6"></figure>
-        First using the GridCity project given in the bootcamps, I started working on random building generation. 
-        I experimented with the GridCity spawn script and decided I wanted random generation and not in columns and rows. 
+        After the map generation, I started working on random building generation. 
+        First using the GridCity project given in the bootcamps, I experimented with the GridCity spawn script and decided I wanted random generation and not in columns and rows. 
         <figure><img src="images/Games/ProceduralArt/Picture7.png" alt="Picture7"></figure>
         I watched some tutorials and created a GridCityRandom script which looks at the X, Y, and Z values I put in between which the buildings may spawn. 
     <br>
@@ -222,7 +222,7 @@
         The UV’ing enables tiling.
     <br>
     <br>
-        <h2 id="Materials">Materials</h2>
+        <h4 id="Materials">Materials</h4>
         I started creating texture materials using Substance 3D Designer. 
         <figure><img src="images/Games/ProceduralArt/Picture14.png" alt="Picture14"></figure>
         There are exposed parameters in Unity so the materials can be customized without having to use Substance 3D Designer again. 
@@ -235,7 +235,7 @@
         <img src="images/Games/ProceduralArt/Picture15.png" alt="Picture15" width="300">
     <br>
     <br>
-        <h2 id="Customizability">Customizability</h2>
+        <h4 id="Customizability">Customizability</h4>
         This custom Unity editor tooling can be used for fast landscape creation. 
         You can change the height and width, noise scale, octaves, persistence, lacunarity, seed, and offset. 
         The mesh will update live. 
@@ -268,7 +268,7 @@
         <img src="images/Games/ProceduralArt/Picture20.png" alt="Picture20" width="195">
     <br>
     <br>
-        <h2 id="LookAndFeel">Look and feel</h2>
+        <h4 id="LookAndFeel">Look and feel</h4>
         <figure><img src="images/Games/ProceduralArt/Picture17.png" alt="Picture17"></figure>
         I added a directional light to enhance the lighting and changed the colors to make them fit with the Morthal aesthetic. 
         For additional VFX, I created a volumetric fog effect for my town over the snow and adjusted the lighting settings, to make it look darker and a bit more like the dawn of day. 
@@ -276,12 +276,10 @@
         I added clouds in the sky as well. 
     <br>
     <br>
-        <b>Conclusion</b>
-        <br>
+        <h4 id="Conclusion">Conclusion</h4>
         Combining all of these techniques, I think I created a simplistic town that matches the chosen theme.
     <br>
     <br>
-        <h2 id="MyProudestAccomplishment">My proudest accomplishment</h2>
         <figure><img src="images/Games/ProceduralArt/Picture3.png" alt="Picture3"></figure>
         My proudest accomplishment is the procedural landscape generation. 
         In the MeshGenerator code, I started with only some code to create a triangle and it turned into a complex vertices system which generates triangles between vertices when runtime is started and a complicated Noise Map with adjustable width, height, noise scale, seed, octaves, persistence, lacunarity, an offset and even adjustable Level Of Detail parameters in the Unity editor, which can still be changed and customized after generation in runtime and update live.
