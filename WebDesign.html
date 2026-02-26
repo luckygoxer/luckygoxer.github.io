@@ -200,7 +200,7 @@
                 <br>
                     <h2 id="InputValidation">Input validation:</h2>
                     I continued by adding username validation. Usernames now only allow a-z, A-Z, 0-9, _, and 3–20 characters. I made sure that if the chosen username already exists in the users table, the signup fails gracefully and tells the user to pick a different one. I implemented this because usernames are typically required to be unique.
-                    <img src="images/Web Design/WebSecurity/1.png" alt="1" width="600">
+                    <img class="smallsmall2" src="images/Web Design/WebSecurity/1.png" alt="1">
                 <br>
                     I also protected the other pages against SQL injection and XSS. Fields are validated both client-side (required) and server-side, and feedback ($message) is shown in the .alert div. 
                 <br>
@@ -223,10 +223,10 @@
                 <br>
                     <h2 id="SecuringPasswords">Securing passwords:</h2>
                     A password is now required, and passwords must be 6–255 characters. I implemented password policy checks for minimum length, containing at least one uppercase, lowercase, a number, and a special character. The server rejects weak passwords, and the user potentially gets feedback on what to change when their new password is submitted.
-                    <img src="images/Web Design/WebSecurity/2.png" alt="2" width="600">
+                    <img class="smallsmall2" src="images/Web Design/WebSecurity/2.png" alt="2">
                 <br>
                     The biggest change is that all passwords are now hashed and verified securely. Hashing is a one-way function that converts a password into a fixed-length string that cannot be reversed. password_hash() automatically generates a unique salt for each password. It uses strong algorithms like bcrypt. Here you can see the former clear-text passwords and the new hashed passwords.
-                    <img src="images/Web Design/WebSecurity/3.png" alt="3" width="600">
+                    <img class="smallsmall2" src="images/Web Design/WebSecurity/3.png" alt="3">
                 <br>
                 <br>
                     A salt is random data added to a password before hashing. It ensures that even if two users have the same password, their hashes differ. password_hash() automatically generates a salt internally, so I didn’t have to manage it manually. 
@@ -243,7 +243,7 @@
                 <br>
                     <h2 id="TicketingSystem">Adding a ticketing system:</h2>
                     Lastly, I added a ‘ticketing system’ (CSRF token generation) to protect against Web Trojans. A token is included in every form and is validated when submitting the form. This way, only the forms from this application will be accepted, and no forged requests from malicious pages. 
-                    <img src="images/Web Design/WebSecurity/4.png" alt="4" width="600">
+                    <img class="smallsmall2" src="images/Web Design/WebSecurity/4.png" alt="4">
                 <br>
                 <br>
                     <h2 id="WebSecurityback">Looking back:</h2>
@@ -537,8 +537,8 @@
                     information that is needed to know what the family home is all about.
                 <br>
                 <br>
-                    <img src="images/Web Design/WZZorg/Picture10.jpg" alt="Picture10" width="200">
-                    <img src="images/Web Design/WZZorg/Picture11.jpg" alt="Picture11" width="200">
+                    <img src="images/Web Design/WZZorg/Picture10.jpg" alt="Picture10" width="295">
+                    <img src="images/Web Design/WZZorg/Picture11.jpg" alt="Picture11" width="295">
                     <br>
                     I have optimized the layout for mobile devices by creating a bigger logo in the top left
                     corner, deleting some paddings and margins in the mobile version that were
