@@ -88,4 +88,5 @@ footer nav{
 	align-items: center;
 	max-width: inherit;
 	object-fit: contain;
+	max-height: 550px;
 }
