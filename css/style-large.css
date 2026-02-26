@@ -77,3 +77,15 @@ footer nav{
 #invisibleforbig{
 	display: none;
 }
+
+img.smallsmall{
+	align-items: center;
+	max-width: inherit;
+	height: 100%;
+}
+
+img.smallsmall2{
+	align-items: center;
+	max-width: inherit;
+	object-fit: contain;
+}
