@@ -47,6 +47,10 @@ aside article{
 	width: 260px;
 }
 
+img.logo{
+	max-width: 260px;
+}
+
 img.linkimg{
 	max-width: 260px;
 }

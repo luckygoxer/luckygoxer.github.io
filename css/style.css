@@ -246,15 +246,6 @@ article ul li img.linkimg{
 	border-radius: 30px;
 }
 
-article ul li img.logo{
-	/* border-radius: 30px; */
-	width: 13vw;
-}
-
-article ul li img.logo:nth-of-type(odd){
-	margin-right: 20px;
-}
-
 aside .formContainer{
 	margin-bottom: 18px;
 }

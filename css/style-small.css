@@ -43,11 +43,6 @@ video.maxaside{
 	max-width: 100vw;
 }
 
-img.linkimg{
-	width: 100vw;
-	object-fit: contain;
-}
-
 aside article{
 	width: calc(100vw - 100px);
 }
@@ -77,6 +72,19 @@ button[type="text"] {
 
 .navsmall{
 	display: block;
+}
+
+img.logo{
+	width: 100vw;
+	object-fit: contain;
+	align-items: center;
+	max-width: calc(100vw - 100px);
+}
+
+
+img.linkimg{
+	width: 100vw;
+	object-fit: contain;
 }
 
 img.linkimg{
