@@ -223,26 +223,26 @@
         <h2 id="Process">Process:</h2>
         <h4 id="Concept">Game concept</h4>
         <p>
-          <figure><img src="images/Games/Process/Fishy Business/pic1.jpg" alt="ProcessPictures"></figure>
+          <figure><img src="images/Games/FishyBusiness/pic1.jpg" alt="ProcessPictures"></figure>
           My first idea for this game was a platformer where you play as a crab. 
           Because I had created a platformer already; ForestFoxDX in Unreal Engine 5, I decided to make a different kind of game.
           <br>
           <br>
           My next idea was an arcade type of game, where you are meant to improve your high score. 
-          <figure><img src="images/Games/Process/Fishy Business/pic2.jpg" alt="ProcessPictures"></figure>
+          <figure><img src="images/Games/FishyBusiness/pic2.jpg" alt="ProcessPictures"></figure>
           I added fishing rods and nets, to show overfishing and the bottles represent plastic pollution.
           <br>
           <br>
           I concluded that a level system might be better, with a bigger second level and thus area to defend in-game.
           <br>
           <br>
-          <figure><img src="images/Games/Process/Fishy Business/pic3.jpg" alt="ProcessPictures"></figure>
+          <figure><img src="images/Games/FishyBusiness/pic3.jpg" alt="ProcessPictures"></figure>
           I wanted a visual indication for the player why it is important to kick the bottles back, so I made some coral reefs with a health bar.
           <br>
           <br>
           <h4 id="Building">Building</h4>
           I started by doing the Unity tutorials; the Essentials, the Creative Core as well as the Junior Programmer course. 
-          <figure><img src="images/Games/Process/Fishy Business/pic4.jpg" alt="ProcessPictures"></figure>
+          <figure><img src="images/Games/FishyBusiness/pic4.jpg" alt="ProcessPictures"></figure>
           I continued learning by watching many, many tutorials on using Unity. 
           Then I made a level layout and a movable character with updating animations. 
           I made a collecting system with a current score, a high score, and a timer. 
@@ -265,28 +265,28 @@
           Afterward, I added custom music and sound effects, a second level, and finally an arcade game mode, where the only goal is beating your high score.
           <br>
           <br>
-          <figure><img src="images/Games/Process/Fishy Business/pic5.jpg" alt="ProcessPictures"></figure>
+          <figure><img src="images/Games/FishyBusiness/pic5.jpg" alt="ProcessPictures"></figure>
           This is a screenshot from level 1 in the final build. 
           I realized that it would be better if the Main Mode levels didn’t have a high score on display because the player isn’t able to kick more bottles than the goal of 15. 
           I deleted it here, so only the arcade/unlimited mode levels have one.
           <br>
           <br>
-          <figure><img src="images/Games/Process/Fishy Business/pic6.jpg" alt="ProcessPictures"></figure>
+          <figure><img src="images/Games/FishyBusiness/pic6.jpg" alt="ProcessPictures"></figure>
           This is a screenshot from the second level of the arcade game mode in the final build.
           <br>
           <br>
           I found that the height where gameObjects spawn varies per gameObject and level. 
-          <figure><img src="images/Games/Process/Fishy Business/pic7.jpg" alt="ProcessPictures"></figure>
+          <figure><img src="images/Games/FishyBusiness/pic7.jpg" alt="ProcessPictures"></figure>
           That’s why I changed the Instantiate(y), to a public float dubbed spawnHeight, so I can change it inside Unity itself. 
           This made adjustments and testing a lot simpler.
           <br>
           <br>
           I used color-coding for the buttons; On the Welcome scene you can see a green button for start, because that is what the player often wants, 
-          <figure><img src="images/Games/Process/Fishy Business/pic8.jpg" alt="ProcessPictures"></figure>
+          <figure><img src="images/Games/FishyBusiness/pic8.jpg" alt="ProcessPictures"></figure>
           on the Win scene is a red button for quit, because it is a bright color that generally means ‘danger’ (this is because you do not accidentally want to quit the entire game), and lastly I made the unlimited mode buttons orange and red retrospectively, to nudge the player to try the main campaign first.
           <br>
           <br>
-          <figure><img src="images/Games/Process/Fishy Business/pic9.jpg" alt="ProcessPictures"></figure>
+          <figure><img src="images/Games/FishyBusiness/pic9.jpg" alt="ProcessPictures"></figure>
           I decided to create a timer with three decimals, rather than without any, so there could be somewhat of a speedrunning experience, or the player could also try to beat their best time. 
           I consider it to be a good addition to the game, adding to the fluency and experience of the game.
           <br>
@@ -297,23 +297,21 @@
           <br>
           The first playtester let me know that the random.range of the x-position for the spawn point of the bottles is too much to the right. 
           I fixed it by moving the float leftestPoint and the float rightestPoint both to the left.
-          <img src="images/Games/Process/Fishy Business/pic10.jpg" width="600px" alt="ProcessPictures">
+          <img src="images/Games/FishyBusiness/pic10.jpg" width="600px" alt="ProcessPictures">
           <br>
           <br>
           The second playtester found the second level easier than the first level. 
           Presumably, because the spawnRates of the bottles, nets, and fishing rots stay the same, which means that the same amount of entities spawn over a bigger x-range, which makes it feel empty. 
           I fixed this by reducing the spawnRates by a second and half a second.
-                <figure><img src="images/Games/Process/Fishy Business/pic11.jpg" width="280px" alt="ProcessPictures">
-                <figure><img src="images/Games/Process/Fishy Business/pic12.jpg" width="280px" alt="ProcessPictures">
-                <figcaption>Level 2</figcaption></figure>
-                <figcaption>Level 1 </figcaption></figure>
-          
+            <img src="images/Games/FishyBusiness/pic11.jpg" width="295px" alt="ProcessPictures">
+            <img src="images/Games/FishyBusiness/pic12.jpg" width="295px" alt="ProcessPictures">
+            <figcaption>Level 1 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; 
+              Level 2</figcaption>
           <br>
-          <br>
-          <figure><img src="images/Games/Process/Fishy Business/pic13.jpg" width="281px"alt="ProcessPictures"></figure>
-          <figure><img src="images/Games/Process/Fishy Business/pic14.jpg" width="281px"alt="ProcessPictures"></figure>
           A first-year student noticed that the KeyBinding for the kick move was not clear. 
           I fixed this by adding the KeyBinding in the selection scene.
+          <img src="images/Games/FishyBusiness/pic13.jpg" width="295px"alt="ProcessPictures">
+          <img src="images/Games/FishyBusiness/pic14.jpg" width="295px"alt="ProcessPictures">
           <br>
           <br>
           <h4 id="Conclusion">Conclusion</h4>
