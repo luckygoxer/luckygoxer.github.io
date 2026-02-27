@@ -90,7 +90,21 @@ footer nav{
 
 .smallsmall2{
 	align-items: center;
-	max-width: inherit;
 	object-fit: contain;
+	max-width: inherit;
 	max-height: 550px;
+}
+
+.smallsmall3{
+	align-items: center;
+	object-fit: contain;
+	max-width: 600px;
+	max-height: 152px;
+}
+
+.smallsmall4{
+	align-items: center;
+	object-fit: contain;
+	max-width: 600px;
+	max-height: 352px;
 }

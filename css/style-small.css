@@ -100,8 +100,22 @@ img.smallsmall{
 
 img.smallsmall2{
 	align-items: center;
-	max-width: calc(100vw - 100px);
 	object-fit: contain;
+	max-width: calc(100vw - 100px);
+}
+
+.smallsmall3{
+	align-items: center;
+	object-fit: contain;
+	width: 335px;
+	max-height: 152px;
+}
+
+.smallsmall4{
+	align-items: center;
+	object-fit: contain;
+	width: 335px;
+	height: 152px;
 }
 
 .next {
