@@ -358,10 +358,18 @@
               <!-- <li class="spotify"><a href="https://open.spotify.com/artist/3oMGoKAKPkB8QvetxDp9kZ?si=rBaesBuhQI-olHyIO49KLg" target="_blank"><img src="images/Empty.png" alt="spotify" /></a></li> -->
               <li class="bible"><a href="https://www.bible.com/users/heuvellucas" target="_blank"><img src="images/Empty.png" alt="bible" /></a></li>
         </nav>
-
+<br>
+        <iframe class="smallsmall3" data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/3oMGoKAKPkB8QvetxDp9kZ?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         <br>
-      
-      <iframe class="smallsmall3" data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/3oMGoKAKPkB8QvetxDp9kZ?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <br>
+        <p>© <span id="year-range"></span> Lucas van den Heuvel — Game & Web Developer & Designer. All rights reserved.</p>
+        <script>
+            const startYear = 2023;
+            const currentYear = new Date().getFullYear();
+            const yearText = startYear === currentYear ? startYear : `${startYear}–${currentYear}`;
+            document.getElementById("year-range").textContent = yearText;
+        </script>
+      <br>
     </section>
 </footer>
 

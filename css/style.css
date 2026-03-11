@@ -389,6 +389,10 @@ footer h1{
 	margin-bottom: 4px;
 }
 
+footer p{
+	color: #6495ED;
+}
+
 aside form h1{
 	text-align: center;
 	color: black;
