@@ -564,15 +564,59 @@ canvas {
     display: none;
 }
 
+.mb-3{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 18px;
+	color: #DEB887;
+}
+
+.mb-3 button {
+	background-color: #6495ED;
+	max-height: 32px;
+}
+
+.d-flex{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 18px;
+}
+
+.buttons-container button {
+	box-sizing: border-box;
+	border-radius: 30px;
+    width: 100%;
+    height: auto;
+	display: block;
+	z-index: 2;
+	position: relative;
+	font-family: "Poppins", sans-serif;
+}
+
+.buttons-container input {
+	box-sizing: border-box;
+	border-radius: 30px;
+    max-width: 600px;
+	width: 100%;
+    height: auto;
+	display: block;
+	z-index: 2;
+	position: relative;
+	font-family: "Poppins", sans-serif;
+}
+
+#albums-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 18px;
+}
+
 #albums-container .card {
 	padding: 8px;
 	background-color: #725752;
 	box-sizing: border-box;
 
 	border-radius: 30px;
-    max-width: 1000px;
-	width: calc(63vw * 9 / 15.75);
-	height: calc(63vw * 9 / 15.75);
     height: auto;
     display: block;
 	padding-top: 5px;
@@ -585,12 +629,17 @@ canvas {
 .card .card-img-top{
 	border-radius: 30px;
     max-width: 1000px;
-	width: calc(63vw * 9 / 15.75 - 16px);
-	height: calc(63vw * 9 / 15.75 - 16px);
+	width: 100%;
 	padding-top: 5px;
 	margin-bottom: 10px;
 	z-index: 2;
 	position: relative;
+}
+
+@media (max-width: 840px) {
+	#albums-container {
+		grid-template-columns: 1fr;
+	}
 }
 
 .formContainer input.errorBorder,
