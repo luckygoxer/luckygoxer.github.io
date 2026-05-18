@@ -81,27 +81,24 @@ img.logo{
 	max-width: calc(100vw - 100px);
 }
 
-
-img.linkimg{
-	width: 100vw;
-	object-fit: contain;
+.next {
+	grid-template-columns: 1fr;
+	column-gap: 0px;
 }
 
 img.linkimg{
-	align-items: center;
-	max-width: calc(100vw - 100px);
+	max-width: calc(100vw - 117px);
 }
 
 img.smallsmall{
 	align-items: center;
-	max-width: calc(100vw - 100px);
-	height: 100%;
+	max-width: calc(100vw - 80px);
 }
 
 img.smallsmall2{
 	align-items: center;
 	object-fit: contain;
-	max-width: calc(100vw - 100px);
+	max-width: calc(100vw - 80px);
 }
 
 .smallsmall3{
@@ -118,10 +115,10 @@ img.smallsmall2{
 	height: 152px;
 }
 
-.next {
-	flex-direction: column; 
-}
-
 ul.navsmall li a{
 	font-size: 1.3em;
+}
+
+#albums-container {
+	grid-template-columns: 1fr;
 }

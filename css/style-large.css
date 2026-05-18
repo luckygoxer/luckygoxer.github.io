@@ -52,11 +52,7 @@ img.logo{
 }
 
 img.linkimg{
-	max-width: 260px;
-}
-
-article ul li img.linkimg{
-	width: 20vw;
+	max-width: calc(20vw - 23px);
 }
 
 main section article{
