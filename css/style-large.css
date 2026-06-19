@@ -52,7 +52,8 @@ img.logo{
 }
 
 img.linkimg{
-	max-width: calc(20vw - 23px);
+	/* max-width: calc(20vw - 23px); */
+	max-width: calc(20vw - 38px);
 }
 
 main section article{

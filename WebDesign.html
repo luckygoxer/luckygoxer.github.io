@@ -104,7 +104,7 @@
                 <div class="invisibleformobile">
                     <h2 id="WebSecurityvideo">Video:</h2>
                     <video class="maxaside" autoplay controls playsinline loop>
-                        <source src="images/Web Design/WebSecurity/Web Security video.webm" type="video/webm">
+                        <source src="images/Design/Web Design/WebSecurity/Web Security video.webm" type="video/webm">
                     </video>
                     <p id="invisibleforbig">Look at this page on your laptop/pc to watch the video!</p>
                     <br>
@@ -198,7 +198,7 @@
                 <br>
                     <h2 id="InputValidation">Input validation:</h2>
                     I continued by adding username validation. Usernames now only allow a-z, A-Z, 0-9, _, and 3–20 characters. I made sure that if the chosen username already exists in the users table, the signup fails gracefully and tells the user to pick a different one. I implemented this because usernames are typically required to be unique.
-                    <img class="smallsmall2" src="images/Web Design/WebSecurity/1.png" alt="1">
+                    <img class="smallsmall2" src="images/Design/Web Design/WebSecurity/1.png" alt="1">
                 <br>
                     I also protected the other pages against SQL injection and XSS. Fields are validated both client-side (required) and server-side, and feedback ($message) is shown in the .alert div. 
                 <br>
@@ -221,10 +221,10 @@
                 <br>
                     <h2 id="SecuringPasswords">Securing passwords:</h2>
                     A password is now required, and passwords must be 6–255 characters. I implemented password policy checks for minimum length, containing at least one uppercase, lowercase, a number, and a special character. The server rejects weak passwords, and the user potentially gets feedback on what to change when their new password is submitted.
-                    <img class="smallsmall2" src="images/Web Design/WebSecurity/2.png" alt="2">
+                    <img class="smallsmall2" src="images/Design/Web Design/WebSecurity/2.png" alt="2">
                 <br>
                     The biggest change is that all passwords are now hashed and verified securely. Hashing is a one-way function that converts a password into a fixed-length string that cannot be reversed. password_hash() automatically generates a unique salt for each password. It uses strong algorithms like bcrypt. Here you can see the former clear-text passwords and the new hashed passwords.
-                    <img class="smallsmall2" src="images/Web Design/WebSecurity/3.png" alt="3">
+                    <img class="smallsmall2" src="images/Design/Web Design/WebSecurity/3.png" alt="3">
                 <br>
                 <br>
                     A salt is random data added to a password before hashing. It ensures that even if two users have the same password, their hashes differ. password_hash() automatically generates a salt internally, so I didn’t have to manage it manually. 
@@ -241,7 +241,7 @@
                 <br>
                     <h2 id="TicketingSystem">Adding a ticketing system:</h2>
                     Lastly, I added a ‘ticketing system’ (CSRF token generation) to protect against Web Trojans. A token is included in every form and is validated when submitting the form. This way, only the forms from this application will be accepted, and no forged requests from malicious pages. 
-                    <img class="smallsmall2" src="images/Web Design/WebSecurity/4.png" alt="4">
+                    <img class="smallsmall2" src="images/Design/Web Design/WebSecurity/4.png" alt="4">
                 <br>
                 <br>
                     <h2 id="WebSecurityback">Looking back:</h2>
@@ -261,7 +261,7 @@
                 <div class="invisibleformobile">
                     <h2 id="SQLvideo">Video:</h2>
                     <video class="maxaside" autoplay controls playsinline loop>
-                        <source src="images/Web Design/SQL/Database video.webm" type="video/webm">
+                        <source src="images/Design/Web Design/SQL/Database video.webm" type="video/webm">
                     </video>
                     <p id="invisibleforbig">Look at this page on your laptop/pc to watch the video!</p>
                     <br>
@@ -273,35 +273,35 @@
                 <br>
                 <br>
                     <h2 id="SQLstyle">Creating a style:</h2>
-                    <figure><img src="images/Web Design/SQL/1.png" alt="1"></figure> 
+                    <figure><img src="images/Design/Web Design/SQL/1.png" alt="1"></figure> 
                     I started by designing a landing page using my knowledge from the Web and Advanced Web modules. This is a Home page where I have built the other pages off of. I created a simple placeholder name and logo.
                 <br>
                 <br>
-                    <figure><img src="images/Web Design/Code2.jpg" alt="ProcessPictures"></figure>
+                    <figure><img src="images/Design/Web Design/Code2.jpg" alt="ProcessPictures"></figure>
                     I chose a color palette to create a fitting aesthetic. 
                     This is a soft color palette creating a bit of personality, but not taking away from the clarity.
                 <br>
                 <br>
                     <h2 id="SQLsidejob">The side job idea:</h2>
-                    <figure><img src="images/Web Design/SQL/3.png" alt="3"></figure> 
+                    <figure><img src="images/Design/Web Design/SQL/3.png" alt="3"></figure> 
                     I first tried to create a database for searching for and offering side jobs. After learning a little bit about PHP and how it collaborates with HTML, I created some pages and forms to make this idea work. 
                     On the Home page, I created a form called ‘Need something?’ where the user can input what is needed and what he/she offers themselves. 
                 <br>
                 <br>
-                    <figure><img src="images/Web Design/SQL/4.png" alt="4"></figure> 
+                    <figure><img src="images/Design/Web Design/SQL/4.png" alt="4"></figure> 
                     The form should then redirect to the Step 2 page with a form called ‘Great! Just one more step...’ where the user can put in their email address, city, and province. 
                     Lastly, that form should redirect to the Results page, where the results are shown and the user can update the results by filling in new information in the ‘Update results’ form, where the user can put in the new city and province, and even choose to ignore the location.
                 <br>
                 <br>
                     <h2 id="SQLfirstphp">The first steps in PHP:</h2>
-                    <figure><img src="images/Web Design/SQL/5.png" alt="5"></figure> 
+                    <figure><img src="images/Design/Web Design/SQL/5.png" alt="5"></figure> 
                     I created a PHP file for the header, so it's easier to implement and read every file, because there is way less HTML in every file; just <?php include "header.php"; ?>. 
                     Using PHP code, the header also now highlights the correct PHP page by setting it to active. 
                 <br>
                 <br>
-                    <figure><img src="images/Web Design/SQL/6.png" alt="6"></figure> 
+                    <figure><img src="images/Design/Web Design/SQL/6.png" alt="6"></figure> 
                     Later, I created another PHP file for the footer, similar to the header, making it easier to change the footer on all pages, instead of having to change it on every one of them. 
-                    <figure><img src="images/Web Design/SQL/7.png" alt="7"></figure> 
+                    <figure><img src="images/Design/Web Design/SQL/7.png" alt="7"></figure> 
                     In the footer, I created a background image and some social media icons to redirect to the corresponding social media.
                 <br>
                 <br>
@@ -309,13 +309,13 @@
                 <br>
                 <br>
                     <h2 id="SQLdatabase">The PHP login system and database:</h2>
-                    <figure><img src="images/Web Design/SQL/8.png" alt="8"></figure> 
+                    <figure><img src="images/Design/Web Design/SQL/8.png" alt="8"></figure> 
                     I started by installing XAMPP and running Apache and MySQL.
                 <br>
                 <br>
                     In phpMyAdmin, I created a new database called login_sample_db with a table called users. 
                     I added columns called id, user_id, user_name, password, and date. 
-                    <figure><img src="images/Web Design/SQL/9.png" alt="9"></figure> 
+                    <figure><img src="images/Design/Web Design/SQL/9.png" alt="9"></figure> 
                     I set the id and user_id to integer, the user_name and password to variable, and the date to timestamp. 
                     The id is for the database, and the user_id is for development usage.  
                     After adding indexes for user_id, user_name, and date, the database is now set up and ready to use.
@@ -326,16 +326,16 @@
                 <br>
                     <b>Logging in</b>
                     <br>
-                    <figure><img src="images/Web Design/SQL/11.png" alt="11"></figure> 
+                    <figure><img src="images/Design/Web Design/SQL/11.png" alt="11"></figure> 
                     I started on the code of the index.php (Home page). 
                     I learned some code to create Sessions to check if the user is logged in or out. 
                     When logged in, the user is met with a greeting by using: Hello &lt;?php echo $user_data['user_name']; ?&gt;! on the index.php (Home page).
-                    <figure><img src="images/Web Design/SQL/12.png" alt="12"></figure> 
+                    <figure><img src="images/Design/Web Design/SQL/12.png" alt="12"></figure> 
                 <br>
                 <br>
                     I created a login.php (Login page). 
                     This page contains a form for logging in by adding a username and password and clicking the login button. 
-                    <figure><img src="images/Web Design/SQL/13.png" alt="13"></figure> 
+                    <figure><img src="images/Design/Web Design/SQL/13.png" alt="13"></figure> 
                     I also added a signup button beneath the form to go to the signup page. 
                     In the login.php code, it checks if the entered information is the same as the information in the database. 
                     Then the user is logged in.
@@ -344,23 +344,23 @@
                 <br><br><br><br><br>
                     <b>Signing up</b>
                     <br>
-                    <figure><img src="images/Web Design/SQL/14.png" alt="14"></figure> 
+                    <figure><img src="images/Design/Web Design/SQL/14.png" alt="14"></figure> 
                     I created a signup.php (Signup page) similar to the Login page. 
                     This page contains a form for signing up by adding a username and password and clicking the sign-up button. 
                     I also added a signup button beneath the form to go to the signup page. 
-                    <figure><img src="images/Web Design/SQL/15.png" alt="15"></figure> 
+                    <figure><img src="images/Design/Web Design/SQL/15.png" alt="15"></figure> 
                     In the signup.php code, it uploads the username and password to the database. 
                     Later, I added code so the password has to be put in twice, and only if they match, an account will be created.
                 <br>
                 <br>
                     In a 
-                    <figure><img src="images/Web Design/SQL/16.png" alt="16"></figure> 
+                    <figure><img src="images/Design/Web Design/SQL/16.png" alt="16"></figure> 
                     new connection.php script, I added functionality to connect to the database, so user information can be read and uploaded. 
                     This script should be included in every page.
                 <br>
                 <br>
                     In a 
-                    <figure><img src="images/Web Design/SQL/17.png" alt="17"></figure> 
+                    <figure><img src="images/Design/Web Design/SQL/17.png" alt="17"></figure> 
                     new functions.php script, I added functionality to check if the user is logged in. 
                     If not, the index.php (Home page) shall redirect to the login.php (Login page). 
                     This script should be included in every page.
@@ -373,10 +373,10 @@
                 <br>
                     <b>Changing my account</b>
                     <br>
-                    <figure><img src="images/Web Design/SQL/18.png" alt="18"></figure> 
+                    <figure><img src="images/Design/Web Design/SQL/18.png" alt="18"></figure> 
                     Lastly, I created a myaccount.php (My account page), where you can see your username, update your username, and update your password. 
                     The code for this page takes heavy inspiration from the signing up page. 
-                    <figure><img src="images/Web Design/SQL/19.png" alt="19"></figure> 
+                    <figure><img src="images/Design/Web Design/SQL/19.png" alt="19"></figure> 
                     The current username is overwritten if the current username is correct and the new username is valid. 
                     The current password is overwritten if the current password is correct and the new password is put in twice and they match.
                 <br>
@@ -424,7 +424,7 @@
                 <br>
                 <br>
                 <h2 id="Creating a style">Creating a style:</h2>
-                <figure><img src="images/Web Design/WZZorg/Picture1.png" alt="Picture1"></figure>
+                <figure><img src="images/Design/Web Design/WZZorg/Picture1.png" alt="Picture1"></figure>
                     I started by installing a WordPress plugin called Blocksy. This plugin makes it very
                     easy to edit menus and change the style for my wesite. I picked an appropriate
                     theme for the website and started working on a color palette.
@@ -445,10 +445,10 @@
                     magnifying glass as a search option, so the user can search the different contents of
                     the website. I made the contact page button in the header say “Let’s talk!” in the big
                     bright orange color to attract attention.
-                    <figure><img src="images/Web Design/WZZorg/Picture2.png" alt="Picture2"></figure>
+                    <figure><img src="images/Design/Web Design/WZZorg/Picture2.png" alt="Picture2"></figure>
                 <br>
                 <br>
-                    <figure><img src="images/Web Design/WZZorg/Picture3.png" alt="Picture3"></figure>
+                    <figure><img src="images/Design/Web Design/WZZorg/Picture3.png" alt="Picture3"></figure>
                     The footer also contains the physical address of the house and the email address to
                     contact my client.
                 <br>
@@ -456,11 +456,11 @@
                 <h2 id="Pages">Pages:</h2>
                     <b>Home page</b>
                     <br>
-                    <figure><img src="images/Web Design/WZZorg/Picture4.png" alt="Picture4"></figure>
+                    <figure><img src="images/Design/Web Design/WZZorg/Picture4.png" alt="Picture4"></figure>
                     For the contents of the home page, I included a background photo, as well as an
                     about us section for the mission, vision, indications, and contraindications, as
                     requested by the client. 
-                    <figure><img src="images/Web Design/WZZorg/Picture5.png" alt="Picture5"></figure>
+                    <figure><img src="images/Design/Web Design/WZZorg/Picture5.png" alt="Picture5"></figure>
                     I added smaller sections for the family house, testimonials,
                     quality mark, signing up, contact content and added buttons to the corresponding
                     pages and a contact section at the bottom with a photo of the client.
@@ -481,7 +481,7 @@
                     studies.
                 <br>
                 <br>
-                    <figure><img src="images/Web Design/WZZorg/Picture6.png" alt="Picture6"></figure>
+                    <figure><img src="images/Design/Web Design/WZZorg/Picture6.png" alt="Picture6"></figure>
                     I added this information in blocks that are easy to read and distinguish from each
                     other, fitting with the style and theme of the website. This way the style is “simplistic,
                     intuitive and cool”, as the client requested. I adjusted many of the paddings and
@@ -500,7 +500,7 @@
                     adjusted many of the paddings and margins too.
                 <br>
                 <br>
-                    <figure><img src="images/Web Design/WZZorg/Picture7.png" alt="Picture7"></figure>
+                    <figure><img src="images/Design/Web Design/WZZorg/Picture7.png" alt="Picture7"></figure>
                     I also added an interactive map using Google Maps and a custom HTML string and
                     added this on the family home page alongside the address. This way users can see
                     where the house is located in the Netherlands.
@@ -508,7 +508,7 @@
                 <br>
                     <b>Quality mark, testimonials page and signing up pages</b>
                     <br>
-                    <figure><img src="images/Web Design/WZZorg/Picture8.png" alt="Picture8"></figure>
+                    <figure><img src="images/Design/Web Design/WZZorg/Picture8.png" alt="Picture8"></figure>
                     I added a quality mark page with information on when the quality mark would be
                     provided. I added a testimonials page and a signing up page. These are all
                     placeholders for now, because the client does not yet have the necessary
@@ -518,7 +518,7 @@
                 <br>
                     <b>Contact page</b>
                     <br>
-                    <figure><img src="images/Web Design/WZZorg/Picture9.png" alt="Picture9"></figure>
+                    <figure><img src="images/Design/Web Design/WZZorg/Picture9.png" alt="Picture9"></figure>
                     I added a contact page with the physical address, email address, and phone number,
                     and a form to contact my client with a fitting photo. I used a WPForms plugin and
                     adjusted it so it would fit my client's needs with a name, email address, phone
@@ -535,8 +535,8 @@
                     information that is needed to know what the family home is all about.
                 <br>
                 <br>
-                    <img src="images/Web Design/WZZorg/Picture10.jpg" alt="Picture10" width="295">
-                    <img src="images/Web Design/WZZorg/Picture11.jpg" alt="Picture11" width="295">
+                    <img src="images/Design/Web Design/WZZorg/Picture10.jpg" alt="Picture10" width="295">
+                    <img src="images/Design/Web Design/WZZorg/Picture11.jpg" alt="Picture11" width="295">
                     <br>
                     I have optimized the layout for mobile devices by creating a bigger logo in the top left
                     corner, deleting some paddings and margins in the mobile version that were
@@ -544,7 +544,7 @@
                     also added a hamburger menu fitting with the theme of the website.
                 <br>
                 <br>
-                    <img src="images/Web Design/WZZorg/Picture12.png" alt="Picture12">
+                    <img src="images/Design/Web Design/WZZorg/Picture12.png" alt="Picture12">
                     <br>
                     I have also optimized the layout for tablet devises, mainly by creating bigger logos
                     and adjusting many of the paddings and margins. Finding the issues were
@@ -636,7 +636,7 @@
                 <br>
                 <h2 id="Web">Web</h2>
                 <p>
-                    <figure><img src="images/Web Design/My_Wireframe.jpg" alt="ProcessPictures"></figure>
+                    <figure><img src="images/Design/Web Design/My_Wireframe.jpg" alt="ProcessPictures"></figure>
                     I started by creating this website as an experiment for the Web module. 
                     It was just a silly project with random quirks as a test for the things that I learned and the capabilities of HTML and CSS. 
                     I started by creating a wireframe for my website with the elements that a website needs to have. 
@@ -657,7 +657,7 @@
                     Lastly, I wanted a &lt;footer&gt; with a &lt;nav&gt; for my social media.
                 <br>
                 <br>
-                    <figure><img src="images/Web Design/First Version.png" alt="ProcessPictures"></figure>
+                    <figure><img src="images/Design/Web Design/First Version.png" alt="ProcessPictures"></figure>
                     This was the first version I made. 
                     The &lt;header&gt; has a &lt;nav&gt; and a &lt;figure&gt; with a logo. Only the slideshow has not been utilized here. 
                 <br>
@@ -668,7 +668,7 @@
                     I made the background-color: aliceblue; to be easier to look at.
                 <br>
                 <br>
-                    <figure><img src="images/Web Design/First Footer.png" alt="ProcessPictures"></figure>
+                    <figure><img src="images/Design/Web Design/First Footer.png" alt="ProcessPictures"></figure>
                     I incorporated a slideshow in some of the &lt;figure&gt;s in the main. 
                     This way, more images can be displayed on the website while the website will not have an extreme height.
                 <br>
@@ -809,7 +809,7 @@
                     <ul>
                         <li>Placement (own HTML experience page)</li>
                     </ul>
-                    <figure><img src="images/Web Design/Code1.jpg" alt="ProcessPictures"></figure>
+                    <figure><img src="images/Design/Web Design/Code1.jpg" alt="ProcessPictures"></figure>
                     <b>In the prototype phase,</b> I created an MVP (minimal viable product). 
                     I started with creating the basics of the website, like the navigation bar, main article, aside, and footer. 
                 <br>
@@ -818,7 +818,7 @@
                     I settled on a personal style that I was happy with. 
                 <br>
                 <br>
-                    <figure><img src="images/Web Design/Code2.jpg" alt="ProcessPictures"></figure>
+                    <figure><img src="images/Design/Web Design/Code2.jpg" alt="ProcessPictures"></figure>
                     It is a soft color palette creating a bit of personality, but will not take away from the clarity. 
                 <br>
                 <br> 
@@ -994,7 +994,7 @@
                     The screenshot would be the most appealing picture and would display what the page is about.  
                 <br>
                 <br>
-                    <figure><img src="images/Web Design/Games.jpg" alt="ProcessPictures"></figure>
+                    <figure><img src="images/Design/Web Design/Games.jpg" alt="ProcessPictures"></figure>
                     <b>In the prototype phase,</b> I created a combination of a screenshot with the name of the game. 
                     This way people immediately know what is on the page and what the name of the game is. 
                     These screenshots need to lure them in to click on the pages. 
