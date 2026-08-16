@@ -106,7 +106,7 @@
 
         <canvas id="unity-canvas" width: calc(63vw); height: calc(63vw * 9 / 16); tabindex="-1" style="width: 1280px; height: 720px; background: #1F1F20"></canvas>
 
-            <script src="Build/1.2 webgl pc.loader.js"></script>
+            <script src="Build/1.5 webgl pc.loader.js"></script>
             <script>
             if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
                 // Mobile device style: fill the whole browser client area with the game canvas:
@@ -126,13 +126,13 @@
 
             createUnityInstance(document.querySelector("#unity-canvas"), {
                 arguments: [],
-                dataUrl: "Build/1.2 webgl pc.data.unityweb",
-                frameworkUrl: "Build/1.2 webgl pc.framework.js.unityweb",
-                codeUrl: "Build/1.2 webgl pc.wasm.unityweb",
+                dataUrl: "Build/1.5 webgl pc.data.unityweb",
+                frameworkUrl: "Build/1.5 webgl pc.framework.js.unityweb",
+                codeUrl: "Build/1.5 webgl pc.wasm.unityweb",
                 streamingAssetsUrl: "StreamingAssets",
                 companyName: "luckygoxer",
                 productName: "Chicken Trekker",
-                productVersion: "1.2",
+                productVersion: "1.5",
                 // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
                 // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
             }).then((unityInstance) => {
@@ -184,7 +184,7 @@
     <br>
         <h2 id="Link">Link:</h2>
         <p class="invisibleformobile">Download it for free on <a href="https://luckygoxer.itch.io/chicken-trekker" target="_blank">my Itch page!</a></p>
-        <p class="invisibleforpc">Look at this page on your laptop/pc to play or download the Windows version for free on <a href="https://luckygoxer.itch.io/chicken-trekker" target="_blank">my Itch page!</a></p>
+        <p class="invisibleforpc">Download the Windows version for free on <a href="https://luckygoxer.itch.io/chicken-trekker" target="_blank">my Itch page!</a></p>
     </article>
 </section>
 </main>

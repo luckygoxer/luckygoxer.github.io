@@ -1,94 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="apple-mobile-web-app-title" content="Chicken Trekker">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="shortcut icon" href="Chicken_Trekker.ico">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <link rel="apple-touch-startup-image" href="/apple-touch-icon.png">
 
-<head>
-    <meta charset="UTF-8">
+        <title>Chicken Trekker</title>
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-    <meta name="apple-mobile-web-app-title" content="Chicken Trekker">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="apple-touch-startup-image" href="/apple-touch-icon.png">
-
-    <title>Chicken Trekker</title>
-
-    <style>
-        html,
-        body {
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background: #1F1F20;
-        }
-
-        body {
-            position: fixed;
-            inset: 0;
-        }
-
-        #unity-canvas {
-            position: fixed;
-            inset: 0;
-
-            width: 100vw;
-            height: 100vh;
-
-            width: 100dvw;
-            height: 100dvh;
-
-            margin: 0;
-            padding: 0;
-
-            display: block;
-
-            background: #1F1F20;
-        }
-    </style>
-</head>
-
-<body>
-
-    <script src="/Detect.js/detect.min.js"></script>
-    <script src="/Detect.js/main.js"></script>
-
-    <canvas id="unity-canvas" tabindex="-1"></canvas>
-
-    <script src="Build/1.3 webgl mobile.loader.js"></script>
-
-    <script>
-        createUnityInstance(
-            document.querySelector("#unity-canvas"),
-            {
-                arguments: [],
-
-                dataUrl: "Build/1.3 webgl mobile.data.unityweb",
-                frameworkUrl: "Build/1.3 webgl mobile.framework.js.unityweb",
-                codeUrl: "Build/1.3 webgl mobile.wasm.unityweb",
-
-                streamingAssetsUrl: "StreamingAssets",
-
-                companyName: "luckygoxer",
-                productName: "Chicken Trekker",
-                productVersion: "1.3"
+        <style>
+            html,
+            body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background: #1F1F20;
             }
-        )
-        .then((unityInstance) => {
-            console.log("Chicken Trekker loaded!");
-        })
-        .catch((message) => {
-            console.error(message);
-            alert(message);
-        });
-    </script>
 
-</body>
+            body {
+                position: fixed;
+                inset: 0;
+            }
 
+            #unity-canvas {
+                position: fixed;
+                inset: 0;
+
+                width: 100vw;
+                height: 100vh;
+
+                width: 100dvw;
+                height: 100dvh;
+
+                margin: 0;
+                padding: 0;
+
+                display: block;
+
+                background: #1F1F20;
+            }
+        </style>
+    </head>
+
+    <body>
+        <script src="/Detect.js/detect.min.js"></script>
+        <script src="/Detect.js/main.js"></script>
+
+        <canvas id="unity-canvas" tabindex="-1"></canvas>
+
+        <script src="Build/1.5 webgl mobile.loader.js"></script>
+        <script>
+            createUnityInstance(
+                document.querySelector("#unity-canvas"),
+                {
+                    arguments: [],
+
+                    dataUrl: "Build/1.5 webgl mobile.data.unityweb",
+                    frameworkUrl: "Build/1.5 webgl mobile.framework.js.unityweb",
+                    codeUrl: "Build/1.5 webgl mobile.wasm.unityweb",
+
+                    streamingAssetsUrl: "StreamingAssets",
+
+                    companyName: "luckygoxer",
+                    productName: "Chicken Trekker",
+                    productVersion: "1.5"
+                }
+            )
+            .then((unityInstance) => {
+                console.log("Chicken Trekker loaded!");
+            })
+            .catch((message) => {
+                console.error(message);
+                alert(message);
+            });
+        </script>
+    </body>
 </html>
 
