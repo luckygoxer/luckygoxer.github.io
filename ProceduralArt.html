@@ -17,15 +17,47 @@
 </head>
 
 <body>
+    
     <header>
         <a href="#"><figure><img src="images/Grease-Me.jpg" alt="Grease"></figure></a>
         
             <script src="js/navsmall.js"></script>
                 
-            <nav>
+            <nav class="space">
                 <ul class="navsmall">
                     <li><a href="index.html">About me</a></li>
                     <li class="active"><a href="Games.html">Games</a></li>
+                    <li id="invisibleforbig" class="indent active" ><a href="Games.html#IndividualProjects">Individual Projects</a></li>
+                    <li id="invisibleforsmall"><a href="Design.html">Design</a></li>
+                    <li id="invisibleforsmall"><a href="TheaterandMusic.html">Theater and Music</a></li>
+                    <li id="invisibleforsmall"><a href="EducationandCourses.html">Education and Courses</a></li>
+                    <li id="invisibleforsmall"><a href="Volunteerwork.html">Volunteer work</a></li>
+                    <li id="invisibleforsmall"><a href="Career.html">Career</a></li>
+                    <li id="invisibleforsmall"><a href="Skills.html">Skills</a></li>
+                    <li id="invisibleforsmall"><a href="Testimony.html">Testimony</a></li>
+                    <li id="invisibleforsmall"><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+    <section>
+            <nav class="spacebig">
+                <ul class="navsmall">
+                    <li class="indent"><a href="ForestFoxDX.html">ForestFoxDX</a></li>
+                    <li class="indent"><a href="FishyBusiness.html">Fishy Business</a></li>
+                    <li class="indent"><a href="TangledMemories.html">Tangled Memories</a></li>
+                    <li class="indent"><a href="SuperPlatformerDX.html">SuperPlatformerDX</a></li>
+                    <li class="indent"><a href="ChickenTrekker.html">Chicken Trekker</a></li>
+                    <li class="indent"><a href="MusicTiles.html">Music Tiles</a></li>
+                    <li class="indent active"><a href="ProceduralArt.html">Procedural Art</a></li>
+                    <li class="indent"><a href="LevelDesign.html">Level Design</a></li>
+                    <li id="invisibleforsmall"><a href="Games.html#GroupProjects">Group Projects</a></li>
+                </ul>
+            </nav>
+    </section>
+
+            <nav class="spacesmall" id="invisibleforbig">
+                <ul class="navsmall">
+                    <li id="invisibleforbig" class="indent"><a href="Games.html#GroupProjects">Group Projects</a></li>
                     <li><a href="Design.html">Design</a></li>
                     <li><a href="TheaterandMusic.html">Theater and Music</a></li>
                     <li><a href="EducationandCourses.html">Education and Courses</a></li>
@@ -36,23 +68,6 @@
                     <li><a href="Contact.html">Contact</a></li>
                 </ul>
             </nav>
-
-    <section>
-        <nav>
-            <ul class="navsmall">
-                <li><a href="ForestFoxDX.html">ForestFoxDX</a></li>
-                <li><a href="FishyBusiness.html">Fishy Business</a></li>
-                <li><a href="TangledMemories.html">Tangled Memories</a></li>
-                <li><a href="SuperPlatformerDX.html">SuperPlatformerDX</a></li>
-                <li><a href="ChickenTrekker.html">Chicken Trekker</a></li>
-                <li><a href="MusicTiles.html">Music Tiles</a></li>
-                <li class="active"><a href="ProceduralArt.html">Procedural Art</a></li>
-                <li><a href="LevelDesign.html">Level Design</a></li>
-                <li><a href="Games.html#GroupProjects">Group Projects</a></li>
-            </ul>
-        </nav>
-    </section>
-
     </header>
 
 <section class="chonk">
@@ -108,7 +123,7 @@
     <br>
         <h2 id="RendersAndUnity">Renders and Unity:</h2>
 
-        <img class="smallsmall2" src="images/Games/ProceduralArt/Picture1.png" alt="Picture1">
+        <img class="smallsmall" src="images/Games/ProceduralArt/Picture1.png" alt="Picture1">
         Here you can get a quick impression of my town. 
         The main mechanics are procedural landmass generation and random building generation.
     <br>
@@ -245,14 +260,14 @@
         You can change the height and width, noise scale, octaves, persistence, lacunarity, seed, and offset. 
         The mesh will update live. 
         The Level Of Detail parameter slider makes the Mesh more or less detailed, by using more or less triangles, taking up more or less space. 
-        <video class="smallsmall2" autoplay muted playsinline loop>
+        <video class="smallsmall" autoplay muted playsinline loop>
             <source src="images/Games/ProceduralArt/Map Generator.mp4" type="video/mp4">
         </video>
     <br>
     <br>
         Here the building parameters can be controlled before generation. 
         The buildings can still be regenerated after generation, both in the editor and runtime, allowing for recognizable variety in the buildings even after generation. 
-        <video class="smallsmall2" autoplay muted playsinline loop>
+        <video class="smallsmall" autoplay muted playsinline loop>
             <source src="images/Games/ProceduralArt/Generate Buildings.mp4" type="video/mp4">
         </video>
     <br>
@@ -261,7 +276,7 @@
         Here the buildings can still be edited, and customized after generation, both in the editor and runtime. 
         The houses consist of a Base Layer, potentially a Middle Layer, and a Roof, so a range of shapes is created procedurally from a smaller range of these Building Blocks. 
         Using exposed parameters in Unity, more Middle Layers can be added to the buildings and more Building Block prefabs for each layer to randomly appear can be added too.  
-        <video class="smallsmall2" autoplay muted playsinline loop>
+        <video class="smallsmall" autoplay muted playsinline loop>
             <source src="images/Games/ProceduralArt/Long House.mp4" type="video/mp4">
         </video>
     <br>
@@ -290,7 +305,7 @@
         In the MeshGenerator code, I started with only some code to create a triangle and it turned into a complex vertices system which generates triangles between vertices when runtime is started and a complicated Noise Map with adjustable width, height, noise scale, seed, octaves, persistence, lacunarity, an offset and even adjustable Level Of Detail parameters in the Unity editor, which can still be changed and customized after generation in runtime and update live.
         <img src="images/Games/ProceduralArt/Picture5.png" alt="Picture5" width="295">
         <img src="images/Games/ProceduralArt/Picture4.png" alt="Picture4" width="295">
-        <video class="smallsmall2" autoplay muted playsinline loop>
+        <video class="smallsmall" autoplay muted playsinline loop>
             <source src="images/Games/ProceduralArt/Map Generator.mp4" type="video/mp4">
         </video>
     <br>
@@ -350,6 +365,8 @@
 <br>
         <iframe class="smallsmall3" data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/3oMGoKAKPkB8QvetxDp9kZ?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         <br>
+        <iframe class="smallsmall3" style="border-radius:12px" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2388667713&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
+        <br>
         <br>
         <p>© <span id="year-range"></span> Lucas van den Heuvel — Game & Web Designer & Developer. All rights reserved.</p>
         <script>
@@ -359,6 +376,7 @@
             document.getElementById("year-range").textContent = yearText;
         </script>
       <br>
+      <br id="invisibleforbig">
     </section>
 </footer>
 

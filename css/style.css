@@ -87,8 +87,8 @@ header img {
 	z-index: 2;
 }
 
-header nav:first-of-type{
-	padding-top: 18px;
+header nav.space{
+	padding-top: 20px;
 }
 
 header section a:link{
@@ -110,11 +110,6 @@ main{
 main section article{
 	border-bottom: 1px dashed #888888;
 	padding: 18px 20px 18px 20px;
-}
-
-
-main section article section.space{
-	margin: 18px 0 0 0;
 }
 
 main section article figure{
@@ -143,9 +138,12 @@ main section article figure img{
 	max-width: 18vw;
 }
 
+.orange{
+	color: orange !important;
+}
+
 aside{
 	float: right;
-	padding-top: 20px;
 	flex-grow:1;
 	flex-basis: 19vw;
 

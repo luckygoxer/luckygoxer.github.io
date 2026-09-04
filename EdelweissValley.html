@@ -23,35 +23,51 @@
         
             <script src="js/navsmall.js"></script>
                 
-            <nav>
+            <nav class="space">
                 <ul class="navsmall">
                     <li><a href="index.html">About me</a></li>
                     <li class="active"><a href="Games.html">Games</a></li>
-                    <li><a href="Design.html">Design</a></li>
-                    <li><a href="TheaterandMusic.html">Theater and Music</a></li>
-                    <li><a href="EducationandCourses.html">Education and Courses</a></li>
-                    <li><a href="Volunteerwork.html">Volunteer work</a></li>
-                    <li><a href="Career.html">Career</a></li>
-                    <li><a href="Skills.html">Skills</a></li>
-                    <li><a href="Testimony.html">Testimony</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
+                    <li id="invisibleforbig" class="indent" ><a href="Games.html#IndividualProjects">Individual Projects</a></li>
+                    <li id="invisibleforbig" class="indent active"><a href="Games.html#GroupProjects">Group Projects</a></li>
+                    <li id="invisibleforsmall"><a href="Design.html">Design</a></li>
+                    <li id="invisibleforsmall"><a href="TheaterandMusic.html">Theater and Music</a></li>
+                    <li id="invisibleforsmall"><a href="EducationandCourses.html">Education and Courses</a></li>
+                    <li id="invisibleforsmall"><a href="Volunteerwork.html">Volunteer work</a></li>
+                    <li id="invisibleforsmall"><a href="Career.html">Career</a></li>
+                    <li id="invisibleforsmall"><a href="Skills.html">Skills</a></li>
+                    <li id="invisibleforsmall"><a href="Testimony.html">Testimony</a></li>
+                    <li id="invisibleforsmall"><a href="Contact.html">Contact</a></li>
                 </ul>
             </nav>
 
     <section>
-        <nav>
-            <ul class="navsmall">
-                <li><a href="Games.html#IndividualProjects">Individual Projects</a></li>
-                <li><a href="MemoriesOfSasha.html">Memories of Sasha</a></li>
-                <li><a href="PurrBlaster.html">PurrBlaster</a></li>
-                <li><a href="Swing-it!.html">Swing-it!</a></li>
-                <li><a href="WhispersInTheWalls.html">Whispers in the Walls</a></li>
-                <li><a href="CritterTown.html">Critter Town</a></li>
-                <li><a href="RollingRudy.html">Rolling Rudy</a></li>
-                <li><a href="LittleMonsters.html">Little Monsters</a></li>
-                <li class="active"><a href="EdelweissValley.html">Edelweis Valley</a></li>
-            </ul>
-        </nav>
+            <nav class="spacebig">
+                <ul class="navsmall">
+                    <li id="invisibleforsmall"><a href="Games.html#IndividualProjects">Individual Projects</a></li>
+                    <li class="indent"><a href="MemoriesOfSasha.html">Memories of Sasha</a></li>
+                    <li class="indent"><a href="PurrBlaster.html">PurrBlaster</a></li>
+                    <li class="indent"><a href="Swing-it!.html">Swing-it!</a></li>
+                    <li class="indent"><a href="WhispersInTheWalls.html">Whispers in the Walls</a></li>
+                    <li class="indent"><a href="CritterTown.html">Critter Town</a></li>
+                    <li class="indent"><a href="RollingRudy.html">Rolling Rudy</a></li>
+                    <li class="indent"><a href="LittleMonsters.html">Little Monsters</a></li>
+                    <li class="indent active"><a href="EdelweissValley.html">Edelweiss Valley</a></li>
+                </ul>
+            </nav>
+    </section>
+
+            <nav class="spacesmall" id="invisibleforbig">
+                <ul class="navsmall">
+                    <li id="invisibleforbig"><a href="Design.html">Design</a></li>
+                    <li id="invisibleforbig"><a href="TheaterandMusic.html">Theater and Music</a></li>
+                    <li id="invisibleforbig"><a href="EducationandCourses.html">Education and Courses</a></li>
+                    <li id="invisibleforbig"><a href="Volunteerwork.html">Volunteer work</a></li>
+                    <li id="invisibleforbig"><a href="Career.html">Career</a></li>
+                    <li id="invisibleforbig"><a href="Skills.html">Skills</a></li>
+                    <li id="invisibleforbig"><a href="Testimony.html">Testimony</a></li>
+                    <li id="invisibleforbig"><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
     </section>
 
     </header>
@@ -218,6 +234,8 @@
 <br>
         <iframe class="smallsmall3" data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/3oMGoKAKPkB8QvetxDp9kZ?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         <br>
+        <iframe class="smallsmall3" style="border-radius:12px" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2388667713&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
+        <br>
         <br>
         <p>© <span id="year-range"></span> Lucas van den Heuvel — Game & Web Designer & Developer. All rights reserved.</p>
         <script>
@@ -227,6 +245,7 @@
             document.getElementById("year-range").textContent = yearText;
         </script>
       <br>
+      <br id="invisibleforbig">
     </section>
 </footer>
 

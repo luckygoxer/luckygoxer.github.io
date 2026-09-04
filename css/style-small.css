@@ -3,6 +3,10 @@ header img{
 	margin-bottom: 0;
 }
 
+header nav.spacesmall{
+	padding-bottom: 20px;
+}
+
 header ul{
 	border-top: 1px solid #CCCCCC;
 	text-align: left;
@@ -12,9 +16,13 @@ header ul li{
 	display: block;
 	max-width: 840px;
 	margin: auto;
-    border-top: 1px solid #CCC;
+    border-top: 1px solid #CCCCCC;
 	border-bottom: 1px solid #CCCCCC;
 	padding-left: 18px;
+}
+
+header ul li.indent{
+	text-indent: 20px;
 }
 
 header ul li.active{
@@ -90,12 +98,12 @@ img.linkimg{
 	max-width: calc(100vw - 117px);
 }
 
-img.smallsmall{
+.smallsmall{
 	align-items: center;
 	max-width: calc(100vw - 80px);
 }
 
-img.smallsmall2{
+.smallsmall2{
 	align-items: center;
 	object-fit: contain;
 	max-width: calc(100vw - 80px);
