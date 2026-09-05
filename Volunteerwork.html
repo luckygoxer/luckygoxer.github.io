@@ -47,6 +47,18 @@
             <time>Today</time>
             <p><div id="dailyVersesWrapper"></div>
                 <script async defer src="https://dailyverses.net/get/verse.js?language=kjv"></script>
+                <script>
+                    window.addEventListener('load', function () {
+                        setTimeout(function () {
+                            const original = document.getElementById('dailyVersesWrapper');
+                            const target = document.getElementById('dailyVersesWrapper2');
+                        
+                            if (original && target) {
+                                target.innerHTML = original.innerHTML;
+                            }
+                        }, 500);
+                    });
+                </script>
             </p>
         </article>
     </aside>
@@ -144,11 +156,11 @@
     </article>
 
     <aside id="invisibleforbig">
+        <br>
         <article class="border">
             <h2>Verse of the Day</h2>
             <time>Today</time>
-            <p><div id="dailyVersesWrapper"></div>
-                <script async defer src="https://dailyverses.net/get/verse.js?language=kjv"></script>
+            <p><div id="dailyVersesWrapper2"></div>
             </p>
         </article>
     </aside>

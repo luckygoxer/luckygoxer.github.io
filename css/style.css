@@ -11,8 +11,8 @@
 
 colors{
 	background-color: #6495ED;
-	background-color: #549F93;
 	background-color: #DEB887;
+	background-color: #549F93;
 	background-color: #725752;
 	background-color: #1C110A;
 }
@@ -146,17 +146,8 @@ aside{
 	float: right;
 	flex-grow:1;
 	flex-basis: 19vw;
-
-	max-height: calc(100vh - 126px);   /* fixed height */
-	overflow-y: auto;    /* adds scrollbar inside */
-	overflow-x: hidden;     /* disable horizontal scrollbar */
-	padding-right: 35px;  /* small padding so scrollbar doesn't overlap text */
 }
 
-aside.bigheader{
-	top: 168px; 
-	max-height: calc(100vh - 188px);  
-}
 
 aside.bigheader article.border {
 	max-height: 499;   /* fixed height */
@@ -181,6 +172,10 @@ aside article.border:nth-of-type(2){
 
 aside article.border:nth-of-type(3){
 	background-color: darkolivegreen;
+}
+
+aside article.border:nth-of-type(4){
+	background-color: #725752;
 }
 
 aside article img{
@@ -400,13 +395,6 @@ footer p{
 	color: #6495ED;
 }
 
-aside form h1{
-	text-align: center;
-	color: black;
-	font-size: large;
-	margin-bottom: 4px;
-}
-
 aside h2.indent{
 	font-size: medium;
 	margin-left: 20px;
@@ -454,7 +442,7 @@ footer nav ul li{
     display:inline-block;
 	background-size: contain, cover;
 	background-repeat: no-repeat;
-	margin: 10px;
+	margin: 9px;
 }
 
 footer nav ul li.linkedin {
@@ -507,10 +495,18 @@ form{
 	border-radius: 30px;
 }
 
-aside form{
+.blue form{
 	padding: 16px;
 	background-color: cornflowerblue;
 	border-radius: 30px;
+}
+
+.blue form h1{
+	text-align: center;
+	color: black;
+	text-shadow: none;
+	font-size: large;
+	margin-bottom: 4px;
 }
 
 input{

@@ -45,10 +45,20 @@ aside{
 	position: sticky;
 	top: 106px; 
 	z-index: 1;
+	
+	max-height: calc(100vh - 126px);   /* fixed height */
+	overflow-y: auto;    /* adds scrollbar inside */
+	overflow-x: hidden;     /* disable horizontal scrollbar */
+	padding-right: 35px;  /* small padding so scrollbar doesn't overlap text */
 }
 
 aside article{
 	width: 260px;
+}
+
+aside.bigheader{
+	top: 168px; 
+	max-height: calc(100vh - 188px);  
 }
 
 img.logo{
