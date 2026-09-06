@@ -134,7 +134,8 @@
         It is quite swampy with water next to the village and the roads seem to be made with sand.
     <br>
     <br>
-        <figure><img src="images/Games/ProceduralArt/Picture2.png" alt="Picture2"></figure>
+        <figure id="invisibleforsmall"><img src="images/Games/ProceduralArt/Picture2.png" alt="Picture2"></figure>
+        <img id="invisibleforbig" class="smallsmall2" src="images/Games/ProceduralArt/Picture2.png" alt="Picture2">
         The houses have thatched roofs that are steeply stopped. Logs and planks are used for the buildings.
     <br>
     <br>
@@ -160,17 +161,20 @@
     <br>
     <br>
         <h4 id="MeshesAndStructures">Meshes and structures</h4>
-        <figure><img src="images/Games/ProceduralArt/Picture3.png" alt="Picture3"></figure>
+        <figure id="invisibleforsmall"><img src="images/Games/ProceduralArt/Picture3.png" alt="Picture3"></figure>
+        <img id="invisibleforbig" class="smallsmall2" src="images/Games/ProceduralArt/Picture3.png" alt="Picture3">
         I imported HDRP and the Substance 3D for Unity plugin in advance and started by working on the landscape. 
         I created a gradient so a higher point will have a brighter color and a lower point will have a darker color. 
-        <figure><img src="images/Games/ProceduralArt/Picture4.png" alt="Picture4"></figure>
+        <figure id="invisibleforsmall"><img src="images/Games/ProceduralArt/Picture4.png" alt="Picture4"></figure>
+        <img id="invisibleforbig" class="smallsmall2" src="images/Games/ProceduralArt/Picture4.png" alt="Picture4">
     <br>
     <br>
         I added a mesh generator by using a mesh filter and mesh renderer. 
         In the MeshGenerator code, I used some code to create a triangle. 
         I made it a square with another triangle and deleted them afterward to write a vertices system. 
         This system generates triangles between vertices when runtime is started. 
-        <figure><img src="images/Games/ProceduralArt/Picture5.png" alt="Picture5"></figure>
+        <figure id="invisibleforsmall"><img src="images/Games/ProceduralArt/Picture5.png" alt="Picture5"></figure>
+        <img id="invisibleforbig" class="smallsmall2" src="images/Games/ProceduralArt/Picture5.png" alt="Picture5">
     <br>
     <br>
         I also added some PerlinNoise in the code and created the floor/ground for my village. 
@@ -200,10 +204,12 @@
     <br>
         <b>Building generation</b>
         <br>
-        <figure><img src="images/Games/ProceduralArt/Picture6.png" alt="Picture6"></figure>
+        <figure id="invisibleforsmall"><img src="images/Games/ProceduralArt/Picture6.png" alt="Picture6"></figure>
+        <img id="invisibleforbig" class="smallsmall2" src="images/Games/ProceduralArt/Picture6.png" alt="Picture6">
         After the map generation, I started working on random building generation. 
         First using the GridCity project given in the bootcamps, I experimented with the GridCity spawn script and decided I wanted random generation and not in columns and rows. 
-        <figure><img src="images/Games/ProceduralArt/Picture7.png" alt="Picture7"></figure>
+        <figure id="invisibleforsmall"><img src="images/Games/ProceduralArt/Picture7.png" alt="Picture7"></figure>
+        <img id="invisibleforbig" class="smallsmall2" src="images/Games/ProceduralArt/Picture7.png" alt="Picture7">
         I watched some tutorials and created a GridCityRandom script which looks at the X, Y, and Z values I put in between which the buildings may spawn. 
     <br>
     <br>
@@ -212,7 +218,8 @@
         I found out I need to have a mesh attached to the map as well as the buildings so they do not fall through the map when a ray is cast. 
     <br>
     <br>
-        <figure><img src="images/Games/ProceduralArt/Picture8.png" alt="Picture8"></figure>
+        <figure id="invisibleforsmall"><img src="images/Games/ProceduralArt/Picture8.png" alt="Picture8"></figure>
+        <img id="invisibleforbig" class="smallsmall2" src="images/Games/ProceduralArt/Picture8.png" alt="Picture8">
         After changing some code, the buildings are now being generated in either the editor or in runtime! 
         I edited the SimpleBuilding script provided in the bootcamps to add space between the buildings, so they don’t overlap and spawn into each other. 
         Now a consistent scale for the size and placement of buildings has been established.  
@@ -220,15 +227,18 @@
     <br>
         <b>3D Modeling</b>
         <br>
-        <figure><img src="images/Games/ProceduralArt/Picture10.png" alt="Picture10"></figure>
+        <figure id="invisibleforsmall"><img src="images/Games/ProceduralArt/Picture10.png" alt="Picture10"></figure>
+        <img id="invisibleforbig" class="smallsmall2" src="images/Games/ProceduralArt/Picture10.png" alt="Picture10">
         I created the houses consisting of a Base Layer, potentially a Middle Layer, and a Roof made in Maya, so a range of shapes is created procedurally from a smaller range of these Building Blocks. 
         I made every building turn a random amount. 
-        <figure><img src="images/Games/ProceduralArt/Picture11.png" alt="Picture11"></figure>
+        <figure id="invisibleforsmall"><img src="images/Games/ProceduralArt/Picture11.png" alt="Picture11"></figure>
+        <img id="invisibleforbig" class="smallsmall2" src="images/Games/ProceduralArt/Picture11.png" alt="Picture11">
     <br>
     <br>
         Of course, the idea with the houses with different levels could also be used to create pine trees with different heights, decks of leaves, and rotations, similar to the buildings. 
         The random locations for spawning the houses could also be used for trees, rocks, etcetera.
-        <figure><img src="images/Games/ProceduralArt/Picture13.png" alt="Picture13"></figure>
+        <figure id="invisibleforsmall"><img src="images/Games/ProceduralArt/Picture13.png" alt="Picture13"></figure>
+        <img id="invisibleforbig" class="smallsmall2" src="images/Games/ProceduralArt/Picture13.png" alt="Picture13">
     <br>
     <br>
         <b>UV’ing</b>
@@ -239,18 +249,21 @@
     <br>
     <br>
         <h4 id="Materials">Materials</h4>
-        <figure><img src="images/Games/ProceduralArt/Picture14.png" alt="Picture14"></figure>
+        <figure id="invisibleforsmall"><img src="images/Games/ProceduralArt/Picture14.png" alt="Picture14"></figure>
+        <img id="invisibleforbig" class="smallsmall2" src="images/Games/ProceduralArt/Picture14.png" alt="Picture14">
         I started creating texture materials using Substance 3D Designer. 
         There are exposed parameters in Unity so the materials can be customized without having to use Substance 3D Designer again. 
         I have created wooden logs, planks, and hay roof textures and applied them to my houses. 
-        <figure><img src="images/Games/ProceduralArt/Picture16.png" alt="Picture16"></figure>
+        <figure id="invisibleforsmall"><img src="images/Games/ProceduralArt/Picture16.png" alt="Picture16"></figure>
+        <img id="invisibleforbig" class="smallsmall2" src="images/Games/ProceduralArt/Picture16.png" alt="Picture16">
         After adjusting the tiling in Unity, all textures seem to have a proper scale for their respective surfaces. 
     <br>
     <br>
         Now my resulting structures and meshes match my visual research and the style of Morthal.
-        <br id="invisibleformobile">
-        <br id="invisibleformobile">
-        <figure><img src="images/Games/ProceduralArt/Picture15.png" alt="Picture15"></figure>
+        <br id="invisibleforsmall">
+        <br id="invisibleforsmall">
+        <figure id="invisibleforsmall"><img src="images/Games/ProceduralArt/Picture15.png" alt="Picture15"></figure>
+        <img id="invisibleforbig" class="smallsmall2" src="images/Games/ProceduralArt/Picture15.png" alt="Picture15">
     <br>
     <br>
         <h4 id="Customizability">Customizability</h4>
@@ -281,28 +294,32 @@
     <br>
         Lastly, the materials can be customized by the exposed parameters inside Unity.
     <br>
-        <img src="images/Games/ProceduralArt/Picture18.png" alt="Picture18" width="195">
-        <img src="images/Games/ProceduralArt/Picture19.png" alt="Picture19" width="195">
-        <img src="images/Games/ProceduralArt/Picture20.png" alt="Picture20" width="195">
+        <img class="onethird" src="images/Games/ProceduralArt/Picture18.png" alt="Picture18">
+        <img class="onethird" src="images/Games/ProceduralArt/Picture19.png" alt="Picture19">
+        <img class="onethird" src="images/Games/ProceduralArt/Picture20.png" alt="Picture20">
     <br>
     <br>
         <h4 id="LookAndFeel">Look and feel</h4>
-        <figure><img src="images/Games/ProceduralArt/Picture17.png" alt="Picture17"></figure>
+        <figure id="invisibleforsmall"><img src="images/Games/ProceduralArt/Picture17.png" alt="Picture17"></figure>
+        <img id="invisibleforbig" class="smallsmall2" src="images/Games/ProceduralArt/Picture17.png" alt="Picture17">
         I added a directional light to enhance the lighting and changed the colors to make them fit with the Morthal aesthetic. 
         For additional VFX, I created a volumetric fog effect for my town over the snow and adjusted the lighting settings, to make it look darker and a bit more like the dawn of day. 
-        <figure><img src="images/Games/ProceduralArt/Picture1.png" alt="Picture1"></figure>
+        <figure id="invisibleforsmall"><img src="images/Games/ProceduralArt/Picture1.png" alt="Picture1"></figure>
         I added clouds in the sky as well. 
+        <img id="invisibleforbig" class="smallsmall2" src="images/Games/ProceduralArt/Picture1.png" alt="Picture1">
     <br>
     <br>
         <h4 id="Conclusion">Conclusion</h4>
         Combining all of these techniques, I think I created a simplistic town that matches the chosen theme.
     <br>
     <br>
-        <figure><img src="images/Games/ProceduralArt/Picture3.png" alt="Picture3"></figure>
+        <figure id="invisibleforsmall"><img src="images/Games/ProceduralArt/Picture3.png" alt="Picture3"></figure>
+        <img id="invisibleforbig" class="smallsmall2" src="images/Games/ProceduralArt/Picture3.png" alt="Picture3">
         My proudest accomplishment is the procedural landscape generation. 
         In the MeshGenerator code, I started with only some code to create a triangle and it turned into a complex vertices system which generates triangles between vertices when runtime is started and a complicated Noise Map with adjustable width, height, noise scale, seed, octaves, persistence, lacunarity, an offset and even adjustable Level Of Detail parameters in the Unity editor, which can still be changed and customized after generation in runtime and update live.
-        <img src="images/Games/ProceduralArt/Picture5.png" alt="Picture5" width="295">
-        <img src="images/Games/ProceduralArt/Picture4.png" alt="Picture4" width="295">
+        <br>
+        <img class="onehalf" src="images/Games/ProceduralArt/Picture5.png" alt="Picture5">
+        <img class="onehalf" src="images/Games/ProceduralArt/Picture4.png" alt="Picture4">
         <video class="smallsmall" autoplay muted playsinline loop>
             <source src="images/Games/ProceduralArt/Map Generator.mp4" type="video/mp4">
         </video>

@@ -190,9 +190,6 @@ aside article img.icon{
 
 .maxaside{
     border-radius: 30px;
-    max-width: 1000px;
-	width: calc(63vw);
-	height: calc(63vw * 9 / 16);
     height: auto;
     display: block;
 	padding-top: 5px;

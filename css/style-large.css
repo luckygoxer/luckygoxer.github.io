@@ -61,6 +61,20 @@ aside.bigheader{
 	max-height: calc(100vh - 188px);  
 }
 
+.maxaside{
+    max-width: 1000px;
+	width: calc(63vw);
+	height: calc(63vw * 9 / 16);
+}
+
+.onethird{
+	max-width: 195px;
+}
+
+.onehalf{
+    width: 295px;
+}
+
 img.logo{
 	max-width: 260px;
 }
