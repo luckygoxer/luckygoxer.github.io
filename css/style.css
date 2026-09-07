@@ -115,8 +115,6 @@ main section article{
 main section article figure{
 	float: right;
 	padding: 0 0 0 10px;
-	min-width: 198px;
-	max-width: 18vw;
 }
 
 main section article figure img{
