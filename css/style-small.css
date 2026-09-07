@@ -92,6 +92,11 @@ button[type="text"] {
 	display: block;
 }
 
+.rounded{
+	min-width: 150px;
+	max-width: 150px;
+}
+
 img.logo{
 	width: 100vw;
 	object-fit: contain;

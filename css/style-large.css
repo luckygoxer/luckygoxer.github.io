@@ -75,6 +75,12 @@ aside.bigheader{
     width: 295px;
 }
 
+.rounded{
+	border-radius: 20px;
+	min-width: 170px;
+	max-width: 170px;
+}
+
 img.logo{
 	max-width: 260px;
 }
