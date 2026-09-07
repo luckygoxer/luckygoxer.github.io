@@ -115,11 +115,13 @@ main section article{
 main section article figure{
 	float: right;
 	padding: 0 0 0 10px;
+	min-width: 198px;
+	max-width: 18vw;
 }
 
 main section article figure img{
-	min-width: 198px;
-	max-width: 18vw;
+	min-width: 188px;
+	max-width: calc(18vw - 10px);
 }
 
 .squared{

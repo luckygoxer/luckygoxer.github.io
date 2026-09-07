@@ -47,6 +47,10 @@ aside article{
 	width: calc(100vw - 80px);
 }
 
+aside.bottom article{
+	width: calc(100vw - 90px);
+}
+
 .formContainermiddle{
 	margin: 18px;
 }
